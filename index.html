@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Badr Albdulmajeed — Electrical and electronic engineer</title>
+<meta name="description" content="Badr Albdulmajeed, B.Eng (Hons) Electrical and Electronic Engineering (APU, 2026): power system protection, Siemens PLC automation, machine vision and embedded hardware. Based in Sharjah, UAE.">
+<meta name="theme-color" content="#06090d">
+<link rel="preload" href="assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/avatar/greeting-poster.webp" as="image" fetchpriority="high">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/site.css?v=1f54557f">
+<script>
+  // motion is always full on this site, whatever the system animation setting (Badr's decision)
+  (function () {
+    var d = document.documentElement;
+    d.classList.remove('no-js'); d.classList.add('js');
+    d.classList.add('motion-full');
+    addEventListener('pagereveal', function (e) {
+      if (!e.viewTransition) return;
+      d.classList.add('vt-home', 'vt-on');
+      e.viewTransition.finished.finally(function () { d.classList.remove('vt-home', 'vt-on'); });
+    });
+  })();
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead" data-masthead>
+  <a class="wordmark" href="#top" aria-label="Badr Albdulmajeed, back to the top">
+    <span class="wordmark__mark" aria-hidden="true"><i></i><i></i></span>
+    <span>Badr Albdulmajeed</span>
+  </a>
+  <nav class="masthead__nav" aria-label="Main">
+    <a href="#vision">Work</a>
+    <a href="#index">All work</a>
+    <a href="#about">About</a>
+    <a href="contact.html">Contact</a>
+    <a class="masthead__cv" href="assets/Badr%20Albdulmajeed%20CV.pdf" download><span class="lg">Download </span>CV</a>
+  </nav>
+</header>
+
+<nav class="rail" aria-label="Chapters" data-rail>
+  <a href="#top" data-rail-link="intro"><span>01</span><b>The engineer</b></a>
+  <a href="#vision" data-rail-link="vision"><span>02</span><b>PCB inspection</b></a>
+  <a href="#wood" data-rail-link="wood"><span>03</span><b>Wood defects</b></a>
+  <a href="#power" data-rail-link="power"><span>04</span><b>Protection</b></a>
+  <a href="#automation" data-rail-link="automation"><span>05</span><b>Automation</b></a>
+</nav>
+
+<main id="main">
+  <!-- 01 + transition: the greeting plate, a camera move across the workshop, into the inspection screen -->
+  <section class="film" id="top" aria-labelledby="hero-name" data-film data-rail-key="intro">
+    <div class="film__frame" data-frame>
+      <div class="stage" data-stage aria-hidden="true">
+        <img class="stage__poster" src="assets/avatar/greeting-poster.webp" width="1280" height="720" alt="">
+        <video class="stage__video" data-video muted playsinline loop preload="auto" poster="assets/avatar/greeting-poster.webp" width="1280" height="720">
+          <source src="assets/avatar/greeting.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="tint" aria-hidden="true"></div>
+      <div class="grade" data-grade aria-hidden="true"></div>
+      <div class="shade" data-shade aria-hidden="true"></div>
+
+      <!-- the workstation monitor; it lights up with Badr's own inspection app and opens to fill the frame -->
+      <div class="screen" data-screen aria-hidden="true">
+        <picture>
+          <source media="(max-width: 760px)" srcset="assets/img/work/fyp-pcb-board.webp" width="850" height="835">
+          <img src="assets/img/work/fyp-detection-gui.webp" srcset="assets/img/work/fyp-detection-gui-800.webp 800w, assets/img/work/fyp-detection-gui.webp 1600w" sizes="100vw" width="1600" height="723" alt="" decoding="async">
+        </picture>
+        <span class="screen__glass"></span>
+      </div>
+
+      <!-- opening title sequence: one verb per discipline -->
+      <div class="titles" data-titles aria-hidden="true"><span>Protect.</span><span>Automate.</span><span>Inspect.</span><span>Build.</span></div>
+      <!-- signage that slides past as the camera pans to the bench -->
+      <p class="sign" data-sign aria-hidden="true">Inspection</p>
+
+      <div class="hero" data-hero>
+        <p class="hero__kicker" data-kicker>Electrical and electronic engineer, Sharjah</p>
+        <div class="hero__row">
+          <div class="hero__left" data-left>
+            <p class="hero__roles" aria-label="Works in power system protection, PLC automation, machine vision and embedded hardware">
+              <span aria-hidden="true">Works in</span>
+              <span class="ticker" aria-hidden="true"><span class="ticker__track" data-ticker><b>power system protection</b><b>PLC automation</b><b>machine vision</b><b>embedded hardware</b></span></span>
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--solid" href="#vision">See the work</a>
+              <a class="btn btn--line" href="assets/Badr%20Albdulmajeed%20CV.pdf" download>CV, PDF</a>
+            </div>
+          </div>
+          <p class="hero__lead" data-lead>Protection studies, Siemens PLC automation and machine vision for quality control, from four years of coursework and an 18-week R&amp;D internship.</p>
+        </div>
+        <h1 class="hero__name" id="hero-name" data-name><span class="nm">Badr</span> <span class="nm">Albdulmajeed</span></h1>
+      </div>
+
+      <div class="cue" aria-hidden="true"><span>Scroll</span><i></i></div>
+
+      <!-- chapter card that lands on the opened screen -->
+      <div class="card" data-card aria-hidden="true">
+        <p class="card__big" data-card-big>02</p>
+        <div>
+          <p class="card__no">Machine vision · final year project</p>
+          <p class="card__title" data-card-title>Reading a circuit board with a model that learned without labels</p>
+        </div>
+      </div>
+
+      <div class="grain" aria-hidden="true"></div>
+      <div class="bars" aria-hidden="true"><i data-bar="top"></i><i data-bar="bottom"></i></div>
+    </div>
+  </section>
+
+  <!-- 02 Machine vision: verified record of the final year project -->
+  <section class="chapter chapter--vision" id="vision" aria-labelledby="vision-h" data-rail-key="vision">
+    <div class="chapter__head">
+      <p class="chapter__no">02 / Machine vision · Final year project, APU, 2026 · individual</p>
+      <h2 id="vision-h" data-split>Self-supervised Vision Transformer for PCB defect detection</h2>
+      <p class="chapter__lead" data-split-lines>Manual inspection of printed circuit boards is slow and labelled defect data is scarce. A MaxViT-Small backbone was pre-trained with SimCLR on unlabelled images, then RF-DETR and DINOv2 were used for detection, exported to ONNX Runtime with CUDA and shown in a Streamlit interface.</p>
+    </div>
+    <ul class="figures" aria-label="Recorded results">
+      <li data-count><b>77.50%</b><span>test accuracy across 22 defect classes</span></li>
+      <li data-count><b>0.8281</b><span>weighted F1 score</span></li>
+      <li data-count><b>68.83%</b><span>mAP@50 for detection</span></li>
+      <li data-count><b>37.25</b><span>frames per second after GPU optimisation</span></li>
+    </ul>
+    <p class="chapter__source">Figures as recorded in the final year project report. The interface on the screen above, the plate below and the board in the next scene are outputs of the project's own software.</p>
+    <p class="chapter__more"><a href="work/pcb-defect-vit.html">Read the full project</a></p>
+    <div class="plates plates--one">
+      <figure class="plate" data-plate>
+        <img src="assets/img/work/fyp-detection-gui.webp" srcset="assets/img/work/fyp-detection-gui-800.webp 800w, assets/img/work/fyp-detection-gui.webp 1600w" sizes="(min-width: 1200px) 1100px, 92vw" width="1600" height="723" alt="Streamlit interface showing an input relay board and its detection results" loading="lazy" decoding="async">
+        <figcaption>The project's Streamlit interface: input board and detections.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 02 → 03: the inspection line. One pass over the FYP test board (its detections and confidence
+       scores are the model's own output), a conveyor move, then the wood application's own segmentation. -->
+  <section class="line" id="line" aria-label="Two inspection passes: a circuit board, then a wooden board" data-line>
+    <div class="line__frame" data-line-frame>
+      <div class="pass pass--pcb" data-pass="pcb" data-rail-key="vision">
+        <div class="pass__media" style="--ar: 1.018">
+          <div class="pass__zoom" data-pcb-zoom>
+            <img class="pass__base" src="assets/img/work/fyp-pcb-board.webp" width="850" height="835" alt="" aria-hidden="true" loading="lazy" decoding="async">
+            <img class="pass__lit" data-pcb-lit src="assets/img/work/fyp-pcb-board.webp" width="850" height="835" alt="Test circuit board with the model's labelled detections and confidence scores: IC, LEDs, resistors, buttons, crystal and connectors" loading="lazy" decoding="async">
+            <i class="focus" data-focus aria-hidden="true"></i>
+          </div>
+          <span class="pass__scan pass__scan--x" data-pcb-scan aria-hidden="true"></span>
+        </div>
+        <div class="pass__read">
+          <p class="pass__no">02 · One pass over a test board</p>
+          <ol class="reads" data-reads>
+            <li data-box="0,0,100,100,1"><b class="reads__what">What the model saw</b><p>Every box and score on this board was drawn by the project's detector. Four of them, read closely:</p></li>
+            <li data-box="38.5,43.7,30.7,32.5,1.5"><b class="reads__what">IC <span>0.93</span></b><p>The main chip, found with 0.93 confidence.</p></li>
+            <li data-box="62.4,82.4,29.4,15,1.6"><b class="reads__what">Buttons <span>0.95</span></b><p>Both push buttons, 0.95 each.</p></li>
+            <li data-box="87.6,63.6,7.8,16.2,1.7"><b class="reads__what">LEDs <span>0.92, 0.89</span></b><p>The two status LEDs, each with its own box.</p></li>
+            <li data-box="0,1,33.5,98,1"><b class="reads__what">Connector <span>0.14</span></b><p>The large connector scores only 0.14: a reading to check by eye, not to trust.</p></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="line__card" data-line-card aria-hidden="true"><b>03</b><span>Next on the line: wood surfaces</span></div>
+
+      <div class="pass pass--wood" data-pass="wood" data-rail-key="wood">
+        <div class="pass__media" style="--ar: 1.192">
+          <div class="pass__zoom">
+            <img class="pass__base pass__base--wood" src="assets/img/work/wood-raw.webp" width="596" height="500" alt="Camera frame of a wooden board with holes and scratches" loading="lazy" decoding="async">
+            <img class="pass__mask" data-wood-mask src="assets/img/work/wood-mask.webp" width="596" height="500" alt="The application's segmentation of the same board: two big holes, four scratches and five small holes" loading="lazy" decoding="async">
+          </div>
+          <span class="pass__scan pass__scan--y" data-wood-scan aria-hidden="true"></span>
+        </div>
+        <div class="pass__read">
+          <p class="pass__no">03 · Defect segmentation on a wooden board</p>
+          <p class="pass__title" data-wood-title>Each defect traced to the pixel, so its area can grade the board</p>
+          <ul class="tally" data-tally>
+            <li><i class="key key--big"></i><b>2</b> big holes</li>
+            <li><i class="key key--scratch"></i><b>4</b> scratches</li>
+            <li><i class="key key--small"></i><b>5</b> small holes</li>
+          </ul>
+          <p class="quality" data-quality><b data-q>98.19%</b><span>quality: the application's reading for this one board</span></p>
+        </div>
+      </div>
+      <div class="belt" aria-hidden="true"><i data-belt></i></div>
+    </div>
+  </section>
+
+  <!-- 03 Wood: verified record of the internship project -->
+  <section class="chapter chapter--wood" id="wood" aria-labelledby="wood-h" data-rail-key="wood">
+    <div class="chapter__head">
+      <p class="chapter__no">03 / Machine vision · Internship, Control Easy, 2025 · individual</p>
+      <h2 id="wood-h" data-split>Wood defect segmentation with a quality score</h2>
+      <p class="chapter__lead" data-split-lines>Detecting that a defect exists is not enough to grade a board: its area matters. Defects were traced as polygons, a YOLOv11 segmentation model was trained on them, and the share of defect pixels becomes a quality percentage. The application runs on a PC and on a Raspberry Pi 5.</p>
+    </div>
+    <ul class="figures figures--spec" aria-label="Project record">
+      <li><b>Instance</b><span>segmentation, one mask per defect</span></li>
+      <li><b>3</b><span>defect classes: big hole, small hole, scratch</span></li>
+      <li><b>2448 × 2048</b><span>camera frame, as shown in the application</span></li>
+      <li><b>PC + Pi 5</b><span>two versions: desktop and Raspberry Pi 5</span></li>
+    </ul>
+    <p class="chapter__source">The board in the scene above and the interface below are the application's own output. The quality figure is its reading for that one board, not an accuracy result.</p>
+    <p class="chapter__more"><a href="work/wood-defect-segmentation.html">Read the full project</a></p>
+    <div class="plates plates--one">
+      <figure class="plate" data-plate>
+        <img src="assets/img/work/wood-segmentation-gui-hd.webp" srcset="assets/img/work/wood-segmentation-gui-hd-800.webp 800w, assets/img/work/wood-segmentation-gui-hd.webp 1599w" sizes="(min-width: 1200px) 1100px, 92vw" width="1599" height="948" alt="The wood inspection application: raw camera frame, segmentation image, legend, quality result and image information" loading="lazy" decoding="async">
+        <figcaption>The inspection application: raw frame, segmentation, legend and result.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 04 scene: the microgrid lab's own Simulink scope, swept by a time cursor (its axis is 0–1 s),
+       then the relay coordination study's verified grading on its single-line diagram -->
+  <section class="scope" id="fault" aria-label="A fault read from the simulation's scope, then the grading of ten relays" data-scope>
+    <div class="scope__frame" data-scope-frame>
+      <span class="scope__trace" data-trace aria-hidden="true"></span>
+      <div class="scope__beat" data-beat="scope" data-rail-key="power">
+        <div class="scope__head">
+          <p class="pass__no">04 · Protection, read from the scope</p>
+          <p class="pass__title">A fault on an 11 kV line, and the relay that clears it</p>
+        </div>
+        <div class="scope__plate" data-scope-plate>
+          <img src="assets/img/work/microgrid-fault-scope.webp" srcset="assets/img/work/microgrid-fault-scope-800.webp 800w, assets/img/work/microgrid-fault-scope.webp 1600w" sizes="(min-width: 900px) 86vw, 100vw" width="1600" height="749" alt="Simulink scope over one second: voltages at two sensors and the operation signals of two relays; relay 2 steps to 1 just before 0.5 s" loading="lazy" decoding="async">
+          <span class="scope__dim" data-scope-dim aria-hidden="true"></span>
+          <span class="scope__mark" style="--t: .27" aria-hidden="true"><i>0.27 s</i></span>
+          <span class="scope__mark scope__mark--trip" style="--t: .47" aria-hidden="true"><i>0.47 s</i></span>
+          <span class="scope__cursor" data-cursor aria-hidden="true"><b data-t>0.000 s</b></span>
+        </div>
+        <ol class="scope__reads" data-scope-reads>
+          <li><b>0.27 s</b><p>The primary relay's trip time. In this test it is disabled, so the disturbance at sensor 2 carries on.</p></li>
+          <li><b>0.47 s</b><p>The backup relay trips and the voltage recovers: 0.2 s after the primary, so the coordination interval held.</p></li>
+        </ol>
+      </div>
+      <div class="scope__beat scope__beat--grading" data-beat="grading" data-rail-key="power">
+        <div class="grading__sld">
+          <img src="assets/img/work/relay-sld.webp" srcset="assets/img/work/relay-sld-800.webp 800w, assets/img/work/relay-sld.webp 1024w" sizes="(min-width: 900px) 56vw, 100vw" width="1024" height="559" alt="Single-line diagram of the 7-bus, 230 kV system with three generators, relays R1 to R10 and their CT ratios" loading="lazy" decoding="async">
+        </div>
+        <div class="grading__read">
+          <p class="pass__no">04 · Ten relays on a 230 kV system</p>
+          <p class="pass__title">Each line graded so the nearest relay trips first</p>
+          <ul class="gbars" aria-label="Verified grading margin on each 230 kV line" data-gbars>
+            <li style="--v: .30"><span>Line 1</span><i></i><b>0.30 s</b></li>
+            <li style="--v: .30"><span>Line 2</span><i></i><b>0.30 s</b></li>
+            <li style="--v: .70"><span>Line 3</span><i></i><b>0.70 s</b></li>
+            <li style="--v: .80"><span>Line 4</span><i></i><b>0.80 s</b></li>
+          </ul>
+          <p class="grading__note">The time between each primary relay and its backup, as verified in the study.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 Power: verified record of the two protection projects -->
+  <section class="chapter chapter--power" id="power" aria-labelledby="power-h" data-rail-key="power">
+    <div class="chapter__head">
+      <p class="chapter__no">04 / Power systems and protection · Switchgear and Protection, APU, 2025–2026 · individual</p>
+      <h2 id="power-h" data-split>Protection that trips selectively and backs itself up</h2>
+      <p class="chapter__lead" data-split-lines>In an open-ended lab, a 33/11 kV radial network was built in Simulink with phase (50/51) and earth-fault (50N/51N) relays and tested across fault types and six IEC and IEEE inverse curves. In a separate study, ten IDMT relays protecting a 7-bus, 230 kV system were set and graded by hand and in a MATLAB App Designer tool.</p>
+    </div>
+    <ul class="figures figures--spec" aria-label="Recorded results">
+      <li><b>0.21–0.47&nbsp;s</b><span>line-to-ground trip times across the six curves (Simulink lab)</span></li>
+      <li><b>0.2&nbsp;s</b><span>coordination interval, held in the backup test</span></li>
+      <li><b>0.30–1.31&nbsp;s</b><span>primary operating times of relays R1 to R10 (study)</span></li>
+      <li data-count><b>1.00%</b><span>maximum error between the MATLAB tool and hand calculation</span></li>
+    </ul>
+    <p class="chapter__source">Figures as recorded in the lab report and the coordination study. The scope and the diagrams are the projects' own outputs.</p>
+    <p class="chapter__more"><a href="work/microgrid-protection.html">Read the protection lab</a><a href="work/relay-coordination.html">Read the coordination study</a></p>
+    <div class="plates plates--one">
+      <figure class="plate" data-plate>
+        <img src="assets/img/work/microgrid-simulink.webp" srcset="assets/img/work/microgrid-simulink-800.webp 800w, assets/img/work/microgrid-simulink.webp 1355w" sizes="(min-width: 1200px) 1100px, 92vw" width="1355" height="716" alt="Simulink model of the 33/11 kV radial network: grid, current transformers, breakers, distribution lines, loads and two relay blocks" loading="lazy" decoding="async">
+        <figcaption>The Simulink model: grid, CTs, breakers, lines, loads and two relays.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 05 scene: the golf ball station's sensor interface, drawn as a signal path. Wording follows the
+       internship record; photographs are Badr's own from the bench. -->
+  <section class="path" id="signal" aria-label="The golf ball station's sensor interface, stage by stage" data-path>
+    <div class="path__frame" data-path-frame data-rail-key="automation">
+      <div class="path__head">
+        <p class="pass__no">05 · Automation: a 24 V sensor into a 3.3 V computer</p>
+        <p class="pass__title" data-path-title>Isolating an industrial sensor from a Raspberry Pi</p>
+      </div>
+      <svg class="wire wire--wide" viewBox="0 0 1200 200" data-wire data-xs="150,390,630,870,1110" aria-hidden="true">
+        <path class="wire__seg" data-seg="1" d="M0 100H75" pathLength="1"/>
+        <path class="wire__seg" data-seg="2" d="M225 100H315" pathLength="1"/>
+        <path class="wire__seg wire__seg--gap" data-seg="3" d="M465 100H555" pathLength="1"/>
+        <path class="wire__seg" data-seg="4" d="M705 100H795" pathLength="1"/>
+        <path class="wire__seg" data-seg="5" d="M945 100H1035" pathLength="1"/>
+        <text class="wire__lbl" x="270" y="84">24 V DC</text>
+        <text class="wire__lbl" x="510" y="84">isolation</text>
+        <text class="wire__lbl" x="750" y="84">GPIO4</text>
+        <text class="wire__lbl" x="990" y="84">capture</text>
+        <g class="node" data-node="1"><rect x="75" y="58" width="150" height="84" rx="12"/><rect class="node__lit" x="75" y="58" width="150" height="84" rx="12"/><text x="150" y="96">Proximity</text><text x="150" y="120">sensor 24 V</text></g>
+        <g class="node" data-node="2"><rect x="315" y="58" width="150" height="84" rx="12"/><rect class="node__lit" x="315" y="58" width="150" height="84" rx="12"/><text x="390" y="96">Relay coil</text><text x="390" y="120">A1 / A2</text></g>
+        <g class="node" data-node="3"><rect x="555" y="58" width="150" height="84" rx="12"/><rect class="node__lit" x="555" y="58" width="150" height="84" rx="12"/><text x="630" y="96">Contacts</text><text x="630" y="120">COM / NO</text></g>
+        <g class="node" data-node="4"><rect x="795" y="58" width="150" height="84" rx="12"/><rect class="node__lit" x="795" y="58" width="150" height="84" rx="12"/><text x="870" y="96">Raspberry</text><text x="870" y="120">Pi 5</text></g>
+        <g class="node" data-node="5"><rect x="1035" y="58" width="150" height="84" rx="12"/><rect class="node__lit" x="1035" y="58" width="150" height="84" rx="12"/><text x="1110" y="96">Camera +</text><text x="1110" y="120">ViT model</text></g>
+        <circle class="wire__pulse" data-pulse cx="0" cy="100" r="7"/>
+      </svg>
+      <svg class="wire wire--compact" viewBox="0 0 600 90" data-wire data-xs="50,175,300,425,550" aria-hidden="true">
+        <path class="wire__seg" data-seg="1" d="M0 45H24" pathLength="1"/>
+        <path class="wire__seg" data-seg="2" d="M76 45H149" pathLength="1"/>
+        <path class="wire__seg wire__seg--gap" data-seg="3" d="M201 45H274" pathLength="1"/>
+        <path class="wire__seg" data-seg="4" d="M326 45H399" pathLength="1"/>
+        <path class="wire__seg" data-seg="5" d="M451 45H524" pathLength="1"/>
+        <g class="node" data-node="1"><circle cx="50" cy="45" r="26"/><circle class="node__lit" cx="50" cy="45" r="26"/><text x="50" y="53">1</text></g>
+        <g class="node" data-node="2"><circle cx="175" cy="45" r="26"/><circle class="node__lit" cx="175" cy="45" r="26"/><text x="175" y="53">2</text></g>
+        <g class="node" data-node="3"><circle cx="300" cy="45" r="26"/><circle class="node__lit" cx="300" cy="45" r="26"/><text x="300" y="53">3</text></g>
+        <g class="node" data-node="4"><circle cx="425" cy="45" r="26"/><circle class="node__lit" cx="425" cy="45" r="26"/><text x="425" y="53">4</text></g>
+        <g class="node" data-node="5"><circle cx="550" cy="45" r="26"/><circle class="node__lit" cx="550" cy="45" r="26"/><text x="550" y="53">5</text></g>
+        <circle class="wire__pulse" data-pulse cx="0" cy="45" r="7"/>
+      </svg>
+      <div class="path__body">
+        <div class="path__photos" data-photos>
+          <img src="assets/img/work/proximity-sensor.webp" srcset="assets/img/work/proximity-sensor-400.webp 400w, assets/img/work/proximity-sensor.webp 489w" sizes="(min-width: 900px) 34vw, 92vw" width="489" height="371" alt="The 24 V DC proximity sensor held in hand" loading="lazy" decoding="async">
+          <img src="assets/img/work/omron-relay.webp" srcset="assets/img/work/omron-relay-400.webp 400w, assets/img/work/omron-relay.webp 549w" sizes="(min-width: 900px) 34vw, 92vw" width="549" height="530" alt="The isolation relay in its socket, wired with test clips" loading="lazy" decoding="async">
+          <img src="assets/img/work/rpi5-kit.webp" srcset="assets/img/work/rpi5-kit-400.webp 400w, assets/img/work/rpi5-kit-800.webp 800w, assets/img/work/rpi5-kit.webp 942w" sizes="(min-width: 900px) 34vw, 92vw" width="942" height="529" alt="Raspberry Pi 5 kit with its power supply, case and a USB webcam" loading="lazy" decoding="async">
+        </div>
+        <ol class="path__reads" data-path-reads>
+          <li><b><span>1</span> Sensor</b><p>A ball on the turntable passes a 24 V DC proximity sensor. Its output is industrial voltage, far above the Pi's 3.3 V input.</p></li>
+          <li><b><span>2</span> Relay coil</b><p>So the sensor drives the coil of an OMRON G2R-1-S relay (A1 / A2), not the computer.</p></li>
+          <li><b><span>3</span> Contacts</b><p>The relay's COM and NO contacts switch GPIO4 to ground. The two circuits never share a wire: galvanic isolation.</p></li>
+          <li><b><span>4</span> Raspberry Pi 5</b><p>The Pi sees GPIO4 go low and triggers the camera.</p></li>
+          <li><b><span>5</span> Camera and model</b><p>A Vision Transformer sorts the ball. The first model, EfficientNet, failed on the live camera, so the dataset was rebuilt from the deployment webcam. The station ran on the company's Industry 4.0 machine.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 Automation: verified record of the interface and the PLC training -->
+  <section class="chapter chapter--automation" id="automation" aria-labelledby="automation-h" data-rail-key="automation">
+    <div class="chapter__head">
+      <p class="chapter__no">05 / Industrial automation and embedded systems · Internship, Control Easy, 2025</p>
+      <h2 id="automation-h" data-split>From a sensor wire to a PLC rack</h2>
+      <p class="chapter__lead" data-split-lines>The golf ball station needed an industrial 24 V DC sensor to trigger a Raspberry Pi 5 safely, so the interface runs through an OMRON G2R-1-S relay. The same internship included Siemens PLC training: an S7-300 with SCADA simulation, an S7-200 with two smart relays, and an S7-1200 running a three-axis pneumatic pick and place, programmed in SCL through TIA Portal.</p>
+    </div>
+    <ul class="figures figures--spec" aria-label="Project record">
+      <li><b>24 V → 3.3 V</b><span>sensor to Pi input, isolated by a relay</span></li>
+      <li><b>GPIO4</b><span>switched to ground by the relay's COM and NO contacts</span></li>
+      <li><b>S7-300, 200, 1200</b><span>Siemens PLCs used in training</span></li>
+      <li><b>SCL</b><span>programmed through TIA Portal</span></li>
+    </ul>
+    <p class="chapter__source">From the internship record. The photographs above are from the bench; the board below is the company's Siemens training rig.</p>
+    <p class="chapter__more"><a href="work/golf-ball-qc.html">Read the full project</a></p>
+    <div class="plates plates--one">
+      <figure class="plate" data-plate>
+        <img src="assets/img/work/siemens-plc-board.webp" srcset="assets/img/work/siemens-plc-board-400.webp 400w, assets/img/work/siemens-plc-board-800.webp 800w, assets/img/work/siemens-plc-board.webp 1129w" sizes="(min-width: 1200px) 1100px, 92vw" width="1129" height="635" alt="Siemens PLC training board with a stack light, smart relays and push buttons at Control Easy" loading="lazy" decoding="async">
+        <figcaption>The Siemens PLC training board at Control Easy.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- build:index -->
+  <section class="index" id="index" aria-labelledby="index-h" data-rail-key="none">
+    <div class="index__head" data-gesture>
+      <p class="chapter__no">All work · 32 projects</p>
+      <h2 id="index-h">Every project, from coursework to the internship</h2>
+      <p class="chapter__lead">Each page is written from its report: the problem, the method, what was recorded and what was used. Pick a discipline or open any line.</p>
+      <div class="guide guide--present" data-pose-host><img class="pose" src="assets/avatar/pose-hologram-still.webp" data-pose="assets/avatar/pose-hologram.webp" data-still="assets/avatar/pose-hologram-end.webp" data-loop="1800" data-loops="1" width="353" height="358" alt="" loading="lazy" decoding="async"></div>
+    </div>
+    <div class="index__filters" role="group" aria-label="Show a discipline" data-filters hidden>
+      <button type="button" class="chip is-on" data-filter="all" aria-pressed="true">All <span>32</span></button>
+      <button type="button" class="chip" data-filter="power" aria-pressed="false">Power and protection <span>7</span></button>
+      <button type="button" class="chip" data-filter="automation" aria-pressed="false">Automation and PLC <span>4</span></button>
+      <button type="button" class="chip" data-filter="vision" aria-pressed="false">Vision and AI <span>8</span></button>
+      <button type="button" class="chip" data-filter="embedded" aria-pressed="false">Embedded hardware <span>2</span></button>
+      <button type="button" class="chip" data-filter="signals" aria-pressed="false">Signals and electronics <span>7</span></button>
+      <button type="button" class="chip" data-filter="software" aria-pressed="false">Software and design <span>4</span></button>
+    </div>
+    <div class="index__wrap">
+      <div class="index__groups">
+      <div class="index__group" data-group="power">
+        <h3>Power and protection <span>7</span></h3>
+        <ul>
+          <li><a class="row" href="work/relay-coordination.html" data-preview="assets/img/work/relay-sld.webp"><b style="view-transition-name: t-relay-coordination">Overcurrent relay coordination study</b><span>Switchgear and Protection module, APU</span><i>2026</i></a></li>
+          <li><a class="row" href="work/microgrid-protection.html" data-preview="assets/img/work/microgrid-simulink.webp"><b style="view-transition-name: t-microgrid-protection">Phase and earth-fault protection of an 11 kV network</b><span>Switchgear and Protection open-ended lab, APU</span><i>2025</i></a></li>
+          <li><a class="row" href="work/power-flow-10-bus.html" data-preview="assets/img/work/powerworld-10bus.webp"><b style="view-transition-name: t-power-flow-10-bus">Power flow analysis of a 10-bus network</b><span>Power System Analysis open-ended lab, APU</span><i>2026</i></a></li>
+          <li><a class="row" href="work/honeycomb-power-hub.html"><b style="view-transition-name: t-honeycomb-power-hub">Modular smart power hub</b><span>Product Creation Technology, APU</span><i>2026</i></a></li>
+          <li><a class="row" href="work/transformer-alternator.html"><b style="view-transition-name: t-transformer-alternator">Transformer and alternator testing</b><span>Electrical Machines 2 lab, APU</span><i>2023</i></a></li>
+          <li><a class="row" href="work/microgrid-technology.html" data-preview="assets/img/work/gtd-microgrid-simulink.webp"><b style="view-transition-name: t-microgrid-technology">Microgrid with solar PV and battery storage</b><span>Generation, Transmission and Distribution, APU</span><i>2024</i></a></li>
+          <li><a class="row" href="work/wind-energy-system.html"><b style="view-transition-name: t-wind-energy-system">Off-grid wind and battery power conversion</b><span>Power Electronics, APU</span><i>2025</i></a></li>
+        </ul>
+      </div>
+      <div class="index__group" data-group="automation">
+        <h3>Automation and PLC <span>4</span></h3>
+        <ul>
+          <li><a class="row" href="work/golf-ball-qc.html" data-preview="assets/img/work/omron-relay.webp"><b style="view-transition-name: t-golf-ball-qc">Automated golf ball inspection station</b><span>Internship, Control Easy</span><i>2025</i></a></li>
+          <li><a class="row" href="work/bus-door-control.html"><b style="view-transition-name: t-bus-door-control">Automated bus door control</b><span>University project</span><i></i></a></li>
+          <li><a class="row" href="work/automotive-part-control.html"><b style="view-transition-name: t-automotive-part-control">Automotive part control system</b><span>University project</span><i></i></a></li>
+          <li><a class="row" href="work/coffee-process.html"><b style="view-transition-name: t-coffee-process">Coffee making process control</b><span>University project</span><i></i></a></li>
+        </ul>
+      </div>
+      <div class="index__group" data-group="vision">
+        <h3>Vision and AI <span>8</span></h3>
+        <ul>
+          <li><a class="row" href="work/pcb-defect-vit.html" data-preview="assets/img/work/fyp-detection-gui.webp"><b style="view-transition-name: t-pcb-defect-vit">Self-supervised Vision Transformer for PCB defect detection</b><span>Final year project, APU</span><i>2026</i></a></li>
+          <li><a class="row" href="work/hospital-agv-vision.html" data-preview="assets/img/work/agv-robot.webp"><b style="view-transition-name: t-hospital-agv-vision">Vision system for a hospital logistics AGV</b><span>Group design project, APU</span><i>2025</i></a></li>
+          <li><a class="row" href="work/pcb-component-inspection.html" data-preview="assets/img/work/pcb-inspection-gui.webp"><b style="view-transition-name: t-pcb-component-inspection">PCB component inspection application</b><span>Internship, Control Easy</span><i>2025</i></a></li>
+          <li><a class="row" href="work/fabric-qc.html" data-preview="assets/img/work/fabric-detection-gui.webp"><b style="view-transition-name: t-fabric-qc">Fabric quality control</b><span>Internship, Control Easy</span><i>2025</i></a></li>
+          <li><a class="row" href="work/wood-defect-segmentation.html" data-preview="assets/img/work/wood-segmentation-gui-hd.webp"><b style="view-transition-name: t-wood-defect-segmentation">Wood defect segmentation</b><span>Internship, Control Easy</span><i>2025</i></a></li>
+          <li><a class="row" href="work/medication-scanner.html"><b style="view-transition-name: t-medication-scanner">Medication scanner and obstacle detection</b><span>University project</span><i></i></a></li>
+          <li><a class="row" href="work/hand-gesture.html"><b style="view-transition-name: t-hand-gesture">Hand gesture recognition</b><span>University project</span><i></i></a></li>
+          <li><a class="row" href="work/fruit-inspection.html" data-preview="assets/img/work/carrot-gui-ai.webp"><b style="view-transition-name: t-fruit-inspection">Baby carrot freshness inspection</b><span>Machine Vision and Intelligence group assignment, APU</span><i>2025</i></a></li>
+        </ul>
+      </div>
+      <div class="index__group" data-group="embedded">
+        <h3>Embedded hardware <span>2</span></h3>
+        <ul>
+          <li><a class="row" href="work/parking-system.html"><b style="view-transition-name: t-parking-system">Residential smart parking system</b><span>Microprocessor and Embedded Systems, APU</span><i>2025</i></a></li>
+          <li><a class="row" href="work/temperature-control.html" data-preview="assets/img/work/reactor-tinkercad.webp"><b style="view-transition-name: t-temperature-control">Temperature control for a batch reactor</b><span>Sensors and Actuators assignment, APU</span><i>2023</i></a></li>
+        </ul>
+      </div>
+      <div class="index__group" data-group="signals">
+        <h3>Signals and electronics <span>7</span></h3>
+        <ul>
+          <li><a class="row" href="work/sound-purifier.html"><b style="view-transition-name: t-sound-purifier">Speech enhancement filter</b><span>Digital Signal Processing, APU</span><i>2025</i></a></li>
+          <li><a class="row" href="work/bjt-amplifier.html"><b style="view-transition-name: t-bjt-amplifier">BJT audio amplifier</b><span>Analogue Electronics, APU</span><i></i></a></li>
+          <li><a class="row" href="work/z-transform.html"><b style="view-transition-name: t-z-transform">Discrete-time system with the Z-transform</b><span>Signals and systems lab, APU</span><i>2023</i></a></li>
+          <li><a class="row" href="work/fm-modulation.html"><b style="view-transition-name: t-fm-modulation">FM modulation and demodulation</b><span>Communication engineering module, APU</span><i></i></a></li>
+          <li><a class="row" href="work/wheatstone-bridge.html" data-preview="assets/img/work/wheatstone-multisim-unbalanced.webp"><b style="view-transition-name: t-wheatstone-bridge">Wheatstone bridge with a potentiometer</b><span>Instrumentation and Measurement lab, APU</span><i>2021</i></a></li>
+          <li><a class="row" href="work/op-amp-amplifiers.html" data-preview="assets/img/work/opamp-multisim-inverting.webp"><b style="view-transition-name: t-op-amp-amplifiers">Inverting and non-inverting 741 amplifiers</b><span>Instrumentation and Measurement lab, APU</span><i>2021</i></a></li>
+          <li><a class="row" href="work/two-port-network.html" data-preview="assets/img/work/twoport-ltspice-pi.webp"><b style="view-transition-name: t-two-port-network">Two-port network parameters</b><span>Analysis of Circuits lab, APU</span><i>2021</i></a></li>
+        </ul>
+      </div>
+      <div class="index__group" data-group="software">
+        <h3>Software and design <span>4</span></h3>
+        <ul>
+          <li><a class="row" href="work/vaccination-centre.html"><b style="view-transition-name: t-vaccination-centre">Vaccination centre system</b><span>University project</span><i></i></a></li>
+          <li><a class="row" href="work/vaccination-inventory.html"><b style="view-transition-name: t-vaccination-inventory">Vaccine inventory system</b><span>University project</span><i></i></a></li>
+          <li><a class="row" href="work/library-lighting.html" data-preview="assets/img/work/library-bookshelves.webp"><b style="view-transition-name: t-library-lighting">Two-level library lighting design</b><span>Lighting design assignment, APU</span><i>2023</i></a></li>
+          <li><a class="row" href="work/go-kart.html"><b style="view-transition-name: t-go-kart">Go-kart design</b><span>University project</span><i></i></a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="index__preview" aria-hidden="true" data-preview-box><img alt="" data-preview-img></div>
+    </div>
+  </section>
+  <!-- /build:index -->
+
+  <!-- build:about -->
+  <section class="about" id="about" aria-labelledby="about-h" data-rail-key="none">
+    <div class="about__head">
+      <p class="chapter__no">About · Sharjah, UAE</p>
+      <h2 id="about-h" data-split>Protection and control engineer, ready to start</h2>
+      <p class="chapter__lead">Power system protection studies, Siemens PLC automation and machine vision for quality control, from four years of coursework and an 18-week R&amp;D internship. B.Eng (Hons) Electrical and Electronic Engineering, APU, 2026. UAE Golden Visa, so no sponsorship is needed. Available to start now.</p>
+      <div class="guide" data-pose-host><img class="pose" src="assets/avatar/pose-arms-still.webp" data-pose="assets/avatar/pose-arms.webp" data-still="assets/avatar/pose-arms-still.webp" data-loop="1560" width="267" height="477" alt="Animated portrait of Badr in workwear, folding his arms" loading="lazy" decoding="async"></div>
+    </div>
+    <div class="about__grid">
+      <article class="about__block about__block--exp" data-reveal>
+        <h3>Experience</h3>
+        <p class="about__role">R&amp;D Project Engineer (Internship)</p>
+        <p class="about__meta">Control Easy Technology Sdn Bhd · Seri Kembangan, Selangor, Malaysia · 11 March 2025 – 11 July 2025</p>
+        <p class="about__sum">Machine vision and control automation company. Supervisor rating: Excellent (Grade A).</p>
+        <ul class="about__points"><li>Delivered five quality-control applications (fabric classification and detection, wood defect segmentation, PCB component inspection, golf ball sorting), each as a PC version and a live Raspberry Pi 5 version.</li><li>Designed a 24 V DC proximity-sensor interface to a 3.3 V Raspberry Pi input through an OMRON G2R-1-S relay for galvanic isolation.</li><li>Trained on Siemens S7-300 (SCADA simulation), S7-200 (two 24RLCB11 smart relays) and S7-1200 (3-axis pneumatic pick and place) in SCL through TIA Portal.</li><li>Wrote the company's 259-page Open-Source AI Deep Learning technical manual.</li></ul>
+        <p class="about__links">Projects: <a href="work/fabric-qc.html">Fabric quality control</a>, <a href="work/wood-defect-segmentation.html">Wood defect segmentation</a>, <a href="work/pcb-component-inspection.html">PCB component inspection application</a>, <a href="work/golf-ball-qc.html">Automated golf ball inspection station</a></p>
+      </article>
+      <article class="about__block" data-reveal>
+        <h3>Education</h3>
+        <div class="about__edu"><p class="about__role">B.Eng (Hons) Electrical and Electronic Engineering</p><p class="about__meta">Asia Pacific University of Technology &amp; Innovation (APU), Kuala Lumpur · Studied 2020–2022 and 2024–2026</p><ul class="about__points"><li>Final year project: self-supervised Vision Transformer for PCB defect detection.</li><li>Modules: Switchgear and Protection; Power System Analysis; Generation, Transmission and Distribution; High Voltage Engineering; Electrical Machines; Power Electronics; Control Engineering; Machine Vision.</li></ul></div><div class="about__edu"><p class="about__role">American High School Diploma</p><p class="about__meta">Sama American School, Cairo, Egypt · 2017–2019</p></div>
+        <h3 class="about__h3b">Languages</h3>
+        <p class="about__meta">Arabic (native), English (fluent)</p>
+      </article>
+    </div>
+    <div class="skills" data-reveal>
+      <h3>Skills, and where they were used</h3>
+      <div class="skills__grid">
+        <div class="skills__col"><h4>Protection</h4><ul><li>Phase and earth-fault overcurrent (ANSI 50/51, 50N/51N)</li><li>IDMT setting and coordination</li><li>CT ratio selection</li><li>Time–current curves</li><li>IEC 60255-151, IEEE C37.112</li></ul><p><a href="work/relay-coordination.html">Overcurrent relay coordination study</a><a href="work/microgrid-protection.html">Phase and earth-fault protection of an 11 kV network</a></p></div>
+        <div class="skills__col"><h4>Power systems</h4><ul><li>Load flow (Newton-Raphson, Gauss-Seidel, Fast-Decoupled)</li><li>Transformer and alternator tests</li><li>Microgrids with PV and storage</li><li>Power electronic converters</li></ul><p><a href="work/power-flow-10-bus.html">Power flow analysis of a 10-bus network</a><a href="work/transformer-alternator.html">Transformer and alternator testing</a><a href="work/microgrid-technology.html">Microgrid with solar PV and battery storage</a><a href="work/wind-energy-system.html">Off-grid wind and battery power conversion</a></p></div>
+        <div class="skills__col"><h4>Automation</h4><ul><li>Siemens S7-300, S7-200, S7-1200</li><li>TIA Portal and SCL</li><li>Relay logic and isolation</li><li>Pneumatics</li><li>LabVIEW</li></ul><p><a href="work/golf-ball-qc.html">Automated golf ball inspection station</a><a href="work/bus-door-control.html">Automated bus door control</a><a href="work/coffee-process.html">Coffee making process control</a></p></div>
+        <div class="skills__col"><h4>Vision and AI</h4><ul><li>Classification, detection, segmentation</li><li>Vision Transformers, YOLOv8, DINOv2</li><li>TensorFlow Lite int8, ONNX Runtime GPU</li><li>Dataset creation in Roboflow</li></ul><p><a href="work/pcb-defect-vit.html">Self-supervised Vision Transformer for PCB defect detection</a><a href="work/hospital-agv-vision.html">Vision system for a hospital logistics AGV</a><a href="work/fabric-qc.html">Fabric quality control</a></p></div>
+        <div class="skills__col"><h4>Hardware</h4><ul><li>Raspberry Pi 5</li><li>NVIDIA Jetson Orin Nano</li><li>Arduino, ESP32</li><li>24 V DC sensors and relays</li></ul><p><a href="work/golf-ball-qc.html">Automated golf ball inspection station</a><a href="work/hospital-agv-vision.html">Vision system for a hospital logistics AGV</a><a href="work/parking-system.html">Residential smart parking system</a></p></div>
+        <div class="skills__col"><h4>Software</h4><ul><li>Python, C, C++, C#</li><li>MATLAB App Designer</li><li>Simulink, PowerWorld, LTspice</li><li>DIALux evo, SolidWorks, TinkerCAD</li></ul><p><a href="work/relay-coordination.html">Overcurrent relay coordination study</a><a href="work/library-lighting.html">Two-level library lighting design</a><a href="work/honeycomb-power-hub.html">Modular smart power hub</a></p></div>
+      </div>
+    </div>
+    <div class="certs" data-reveal>
+      <h3>Certificates</h3>
+      <ul class="certs__list">
+        <li><a href="assets/Matlab%20on-Ramp%20certificate.pdf" target="_blank" rel="noopener"><img src="assets/img/certs/matlab-on-ramp-certificate.webp" srcset="assets/img/certs/matlab-on-ramp-certificate-400.webp 400w, assets/img/certs/matlab-on-ramp-certificate.webp 600w" sizes="200px" width="600" height="425" alt="" loading="lazy" decoding="async"><b>MATLAB Onramp</b><span>MathWorks · 1 September 2026</span></a></li>
+        <li><a href="assets/Simulink%20on-Ramp%20certificate.pdf" target="_blank" rel="noopener"><img src="assets/img/certs/simulink-on-ramp-certificate.webp" srcset="assets/img/certs/simulink-on-ramp-certificate-400.webp 400w, assets/img/certs/simulink-on-ramp-certificate.webp 600w" sizes="200px" width="600" height="425" alt="" loading="lazy" decoding="async"><b>Simulink Onramp</b><span>MathWorks · 3 September 2026</span></a></li>
+        <li><a href="assets/MATLAB%20Desktop%20Tools%20and%20Troubleshooting%20Scripts.pdf" target="_blank" rel="noopener"><img src="assets/img/certs/matlab-desktop-tools-and-troubleshooting-scripts.webp" srcset="assets/img/certs/matlab-desktop-tools-and-troubleshooting-scripts-400.webp 400w, assets/img/certs/matlab-desktop-tools-and-troubleshooting-scripts.webp 600w" sizes="200px" width="600" height="425" alt="" loading="lazy" decoding="async"><b>MATLAB Desktop Tools and Troubleshooting Scripts</b><span>MathWorks · 4 September 2026</span></a></li>
+        <li><a href="assets/Explore%20Data%20with%20MATLAB%20Plots.pdf" target="_blank" rel="noopener"><img src="assets/img/certs/explore-data-with-matlab-plots.webp" srcset="assets/img/certs/explore-data-with-matlab-plots-400.webp 400w, assets/img/certs/explore-data-with-matlab-plots.webp 600w" sizes="200px" width="600" height="425" alt="" loading="lazy" decoding="async"><b>Explore Data with MATLAB Plots</b><span>MathWorks · 14 September 2026</span></a></li>
+        <li><a href="assets/Make%20and%20Manipulate%20Matrices.pdf" target="_blank" rel="noopener"><img src="assets/img/certs/make-and-manipulate-matrices.webp" srcset="assets/img/certs/make-and-manipulate-matrices-400.webp 400w, assets/img/certs/make-and-manipulate-matrices.webp 600w" sizes="200px" width="600" height="425" alt="" loading="lazy" decoding="async"><b>Make and Manipulate Matrices</b><span>MathWorks · 14 September 2026</span></a></li>
+        <li><a href="assets/Calculations%20with%20Vectors%20and%20Matrices.pdf" target="_blank" rel="noopener"><img src="assets/img/certs/calculations-with-vectors-and-matrices.webp" srcset="assets/img/certs/calculations-with-vectors-and-matrices-400.webp 400w, assets/img/certs/calculations-with-vectors-and-matrices.webp 600w" sizes="200px" width="600" height="425" alt="" loading="lazy" decoding="async"><b>Calculations with Vectors and Matrices</b><span>MathWorks · 14 September 2026</span></a></li>
+        <li><a href="assets/Core%20MATLAB%20Skills.pdf" target="_blank" rel="noopener"><img src="assets/img/certs/core-matlab-skills.webp" srcset="assets/img/certs/core-matlab-skills-400.webp 400w, assets/img/certs/core-matlab-skills.webp 600w" sizes="200px" width="600" height="425" alt="" loading="lazy" decoding="async"><b>Core MATLAB Skills learning path</b><span>MathWorks · 14 September 2026</span></a></li>
+        <li><a href="assets/Machine%20Learning%20Onramp.pdf" target="_blank" rel="noopener"><img src="assets/img/certs/machine-learning-onramp.webp" srcset="assets/img/certs/machine-learning-onramp-400.webp 400w, assets/img/certs/machine-learning-onramp.webp 600w" sizes="200px" width="600" height="425" alt="" loading="lazy" decoding="async"><b>Machine Learning Onramp</b><span>MathWorks · 1 October 2026</span></a></li>
+      </ul>
+      <p class="certs__badge"><a href="https://www.credly.com/earner/earned/badge/26264633-9031-4a9e-a353-98b5489c7375" target="_blank" rel="noopener">Verified digital badge on Credly</a></p>
+    </div>
+    <div class="faq" data-reveal>
+      <h3>Questions recruiters ask</h3>
+      <dl><div><dt>Where are you based and can you work in the UAE?</dt><dd>I live in Sharjah and hold a UAE Golden Visa, so no employer sponsorship is needed.</dd></div><div><dt>When can you start?</dt><dd>Now. I graduated in 2026 and have no notice period.</dd></div><div><dt>Which roles are you looking for?</dt><dd><p>Graduate engineering roles in:</p><ul class="faq__list"><li>Protection and control</li><li>Power systems</li><li>Industrial automation</li><li>Machine vision</li></ul></dd></div><div><dt>Do you have hands-on experience?</dt><dd>Yes. I worked as an R&amp;D Project Engineer at Control Easy Technology and delivered five quality-control applications there.</dd></div><div><dt>Which languages do you work in?</dt><dd>Arabic (native) and English (fluent).</dd></div></dl>
+    </div>
+  </section>
+  <!-- /build:about -->
+</main>
+
+<footer class="contact" id="contact" data-rail-key="none">
+  <h2>Talk to Badr about a role or a project</h2>
+  <p class="contact__panel"><a class="btn btn--solid" href="contact.html">Open the contact panel</a></p>
+</footer>
+
+<script src="assets/vendor/gsap/gsap.min.js" defer></script>
+<script src="assets/vendor/gsap/ScrollTrigger.min.js" defer></script>
+<script src="assets/vendor/gsap/SplitText.min.js" defer></script>
+<script src="assets/js/pose.js?v=6250409d" defer></script>
+<script src="assets/js/main.js?v=7f289688" defer></script>
+</body>
+</html>

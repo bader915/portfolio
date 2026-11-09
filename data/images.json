@@ -1,0 +1,466 @@
+{
+"assets/Credly.png": [
+700,
+700
+],
+"assets/img/certs/calculations-with-vectors-and-matrices-400.webp": [
+400,
+283
+],
+"assets/img/certs/calculations-with-vectors-and-matrices.webp": [
+600,
+425
+],
+"assets/img/certs/core-matlab-skills-400.webp": [
+400,
+283
+],
+"assets/img/certs/core-matlab-skills.webp": [
+600,
+425
+],
+"assets/img/certs/explore-data-with-matlab-plots-400.webp": [
+400,
+283
+],
+"assets/img/certs/explore-data-with-matlab-plots.webp": [
+600,
+425
+],
+"assets/img/certs/machine-learning-onramp-400.webp": [
+400,
+283
+],
+"assets/img/certs/machine-learning-onramp.webp": [
+600,
+425
+],
+"assets/img/certs/make-and-manipulate-matrices-400.webp": [
+400,
+283
+],
+"assets/img/certs/make-and-manipulate-matrices.webp": [
+600,
+425
+],
+"assets/img/certs/matlab-desktop-tools-and-troubleshooting-scripts-400.webp": [
+400,
+283
+],
+"assets/img/certs/matlab-desktop-tools-and-troubleshooting-scripts.webp": [
+600,
+425
+],
+"assets/img/certs/matlab-on-ramp-certificate-400.webp": [
+400,
+283
+],
+"assets/img/certs/matlab-on-ramp-certificate.webp": [
+600,
+425
+],
+"assets/img/certs/simulink-on-ramp-certificate-400.webp": [
+400,
+283
+],
+"assets/img/certs/simulink-on-ramp-certificate.webp": [
+600,
+425
+],
+"assets/img/work/agv-architecture-400.webp": [
+400,
+352
+],
+"assets/img/work/agv-architecture.webp": [
+628,
+552
+],
+"assets/img/work/agv-robot-400.webp": [
+400,
+533
+],
+"assets/img/work/agv-robot.webp": [
+600,
+800
+],
+"assets/img/work/agv-wiring-400.webp": [
+400,
+352
+],
+"assets/img/work/agv-wiring.webp": [
+768,
+675
+],
+"assets/img/work/carrot-gui-ai-400.webp": [
+400,
+253
+],
+"assets/img/work/carrot-gui-ai.webp": [
+790,
+499
+],
+"assets/img/work/carrot-roboflow-dataset-400.webp": [
+400,
+252
+],
+"assets/img/work/carrot-roboflow-dataset-800.webp": [
+800,
+504
+],
+"assets/img/work/carrot-roboflow-dataset.webp": [
+1070,
+674
+],
+"assets/img/work/carrot-vision-output-400.webp": [
+400,
+225
+],
+"assets/img/work/carrot-vision-output.webp": [
+978,
+550
+],
+"assets/img/work/dehang-camera-400.webp": [
+400,
+711
+],
+"assets/img/work/dehang-camera.webp": [
+489,
+869
+],
+"assets/img/work/fabric-classification-gui-400.webp": [
+400,
+283
+],
+"assets/img/work/fabric-classification-gui.webp": [
+485,
+343
+],
+"assets/img/work/fabric-detection-gui-400.webp": [
+400,
+285
+],
+"assets/img/work/fabric-detection-gui.webp": [
+845,
+603
+],
+"assets/img/work/fyp-detection-gui-400.webp": [
+400,
+181
+],
+"assets/img/work/fyp-detection-gui-800.webp": [
+800,
+362
+],
+"assets/img/work/fyp-detection-gui.webp": [
+1600,
+723
+],
+"assets/img/work/fyp-pcb-board-400.webp": [
+400,
+393
+],
+"assets/img/work/fyp-pcb-board.webp": [
+850,
+835
+],
+"assets/img/work/fyp-poster-400.webp": [
+400,
+565
+],
+"assets/img/work/fyp-poster-800.webp": [
+800,
+1131
+],
+"assets/img/work/fyp-poster.webp": [
+1055,
+1491
+],
+"assets/img/work/gtd-microgrid-simulink-400.webp": [
+400,
+154
+],
+"assets/img/work/gtd-microgrid-simulink-800.webp": [
+800,
+308
+],
+"assets/img/work/gtd-microgrid-simulink.webp": [
+1600,
+616
+],
+"assets/img/work/library-bookshelves-400.webp": [
+400,
+172
+],
+"assets/img/work/library-bookshelves-800.webp": [
+800,
+343
+],
+"assets/img/work/library-bookshelves.webp": [
+1235,
+530
+],
+"assets/img/work/library-hall-daylight-400.webp": [
+400,
+175
+],
+"assets/img/work/library-hall-daylight-800.webp": [
+800,
+350
+],
+"assets/img/work/library-hall-daylight.webp": [
+1018,
+446
+],
+"assets/img/work/library-history-daylight-400.webp": [
+400,
+209
+],
+"assets/img/work/library-history-daylight.webp": [
+836,
+436
+],
+"assets/img/work/library-history-no-daylight-400.webp": [
+400,
+187
+],
+"assets/img/work/library-history-no-daylight.webp": [
+929,
+435
+],
+"assets/img/work/library-level1-plan-400.webp": [
+400,
+249
+],
+"assets/img/work/library-level1-plan.webp": [
+919,
+571
+],
+"assets/img/work/library-meeting-room-400.webp": [
+400,
+181
+],
+"assets/img/work/library-meeting-room-800.webp": [
+800,
+363
+],
+"assets/img/work/library-meeting-room.webp": [
+1003,
+455
+],
+"assets/img/work/loadflow-matlab-400.webp": [
+400,
+395
+],
+"assets/img/work/loadflow-matlab.webp": [
+672,
+664
+],
+"assets/img/work/microgrid-fault-scope-400.webp": [
+400,
+187
+],
+"assets/img/work/microgrid-fault-scope-800.webp": [
+800,
+374
+],
+"assets/img/work/microgrid-fault-scope.webp": [
+1600,
+749
+],
+"assets/img/work/microgrid-relay-settings-400.webp": [
+400,
+225
+],
+"assets/img/work/microgrid-relay-settings.webp": [
+721,
+405
+],
+"assets/img/work/microgrid-simulink-400.webp": [
+400,
+211
+],
+"assets/img/work/microgrid-simulink-800.webp": [
+800,
+423
+],
+"assets/img/work/microgrid-simulink.webp": [
+1355,
+716
+],
+"assets/img/work/omron-relay-400.webp": [
+400,
+386
+],
+"assets/img/work/omron-relay.webp": [
+549,
+530
+],
+"assets/img/work/opamp-multisim-inverting-400.webp": [
+400,
+186
+],
+"assets/img/work/opamp-multisim-inverting-800.webp": [
+800,
+371
+],
+"assets/img/work/opamp-multisim-inverting.webp": [
+1361,
+632
+],
+"assets/img/work/opamp-multisim-noninverting-400.webp": [
+400,
+189
+],
+"assets/img/work/opamp-multisim-noninverting-800.webp": [
+800,
+378
+],
+"assets/img/work/opamp-multisim-noninverting.webp": [
+1363,
+644
+],
+"assets/img/work/pcb-inspection-gui-400.webp": [
+400,
+205
+],
+"assets/img/work/pcb-inspection-gui-800.webp": [
+800,
+410
+],
+"assets/img/work/pcb-inspection-gui-hd-400.webp": [
+400,
+211
+],
+"assets/img/work/pcb-inspection-gui-hd-800.webp": [
+800,
+422
+],
+"assets/img/work/pcb-inspection-gui-hd.webp": [
+1600,
+845
+],
+"assets/img/work/pcb-inspection-gui.webp": [
+1172,
+601
+],
+"assets/img/work/powerworld-10bus-400.webp": [
+400,
+168
+],
+"assets/img/work/powerworld-10bus-800.webp": [
+800,
+337
+],
+"assets/img/work/powerworld-10bus.webp": [
+1600,
+674
+],
+"assets/img/work/proximity-sensor-400.webp": [
+400,
+303
+],
+"assets/img/work/proximity-sensor.webp": [
+489,
+371
+],
+"assets/img/work/psu-wiring-400.webp": [
+400,
+555
+],
+"assets/img/work/psu-wiring.webp": [
+489,
+678
+],
+"assets/img/work/reactor-tinkercad-400.webp": [
+400,
+302
+],
+"assets/img/work/reactor-tinkercad.webp": [
+601,
+454
+],
+"assets/img/work/relay-sld-400.webp": [
+400,
+218
+],
+"assets/img/work/relay-sld-800.webp": [
+800,
+437
+],
+"assets/img/work/relay-sld.webp": [
+1024,
+559
+],
+"assets/img/work/rpi5-kit-400.webp": [
+400,
+225
+],
+"assets/img/work/rpi5-kit-800.webp": [
+800,
+449
+],
+"assets/img/work/rpi5-kit.webp": [
+942,
+529
+],
+"assets/img/work/siemens-plc-board-400.webp": [
+400,
+225
+],
+"assets/img/work/siemens-plc-board-800.webp": [
+800,
+450
+],
+"assets/img/work/siemens-plc-board.webp": [
+1129,
+635
+],
+"assets/img/work/twoport-ltspice-pi-400.webp": [
+400,
+285
+],
+"assets/img/work/twoport-ltspice-pi-800.webp": [
+800,
+570
+],
+"assets/img/work/twoport-ltspice-pi.webp": [
+1150,
+820
+],
+"assets/img/work/wheatstone-multisim-balanced-400.webp": [
+400,
+387
+],
+"assets/img/work/wheatstone-multisim-balanced.webp": [
+716,
+692
+],
+"assets/img/work/wheatstone-multisim-unbalanced-400.webp": [
+400,
+390
+],
+"assets/img/work/wheatstone-multisim-unbalanced.webp": [
+709,
+691
+],
+"assets/img/work/wood-mask.webp": [
+596,
+500
+],
+"assets/img/work/wood-raw.webp": [
+596,
+500
+],
+"assets/img/work/wood-segmentation-gui-hd-400.webp": [
+400,
+237
+],
+"assets/img/work/wood-segmentation-gui-hd-800.webp": [
+800,
+474
+],
+"assets/img/work/wood-segmentation-gui-hd.webp": [
+1599,
+948
+]
+}

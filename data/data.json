@@ -1,0 +1,1588 @@
+{
+  "_readme": "All site content. Edit here, then run: node tools/build.mjs (writes work/*.html, contact.html and the index and About sections of index.html). The email and phone come from .env, not from this file. Every fact traces to a report, the internship report or the CV; needsInput lists what Badr still has to supply for a fuller case study and is never shown on the site.",
+  "person": {
+    "name": "Badr Albdulmajeed",
+    "headline": "Protection and control engineer",
+    "lead": "Power system protection studies, Siemens PLC automation and machine vision for quality control, from four years of coursework and an 18-week R&D internship.",
+    "degree": "B.Eng (Hons) Electrical and Electronic Engineering, APU, 2026",
+    "location": "Sharjah, UAE",
+    "visa": "UAE Golden Visa",
+    "availability": "Available to start now",
+    "linkedin": "https://www.linkedin.com/in/badr-albdulmajeed-b45437155/",
+    "github": "https://github.com/bader915",
+    "cv": "assets/Badr Albdulmajeed CV.pdf",
+    "languages": [
+      {
+        "name": "Arabic",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "Fluent"
+      }
+    ]
+  },
+  "categories": [
+    {
+      "id": "power",
+      "label": "Power and protection"
+    },
+    {
+      "id": "automation",
+      "label": "Automation and PLC"
+    },
+    {
+      "id": "vision",
+      "label": "Vision and AI"
+    },
+    {
+      "id": "embedded",
+      "label": "Embedded hardware"
+    },
+    {
+      "id": "signals",
+      "label": "Signals and electronics"
+    },
+    {
+      "id": "software",
+      "label": "Software and design"
+    }
+  ],
+  "services": [
+    {
+      "id": "protection",
+      "title": "Protection and power studies",
+      "line": "IDMT relay settings, CT ratio selection, time grading, fault and load-flow studies in MATLAB, Simulink and PowerWorld.",
+      "tools": [
+        "MATLAB",
+        "Simulink",
+        "PowerWorld",
+        "IEC 60255",
+        "IEEE C37.112"
+      ],
+      "projects": [
+        "relay-coordination",
+        "microgrid-protection",
+        "power-flow-10-bus"
+      ],
+      "image": "assets/img/work/relay-sld.webp",
+      "imageAlt": "Single-line diagram of the 7-bus system with relays R1 to R10 and their CT ratios"
+    },
+    {
+      "id": "automation",
+      "title": "PLC and industrial automation",
+      "line": "Siemens S7-300, S7-200 and S7-1200 programmed in SCL through TIA Portal, 24 V DC field wiring and relay isolation.",
+      "tools": [
+        "Siemens S7",
+        "TIA Portal",
+        "SCL",
+        "LabVIEW",
+        "Pneumatics"
+      ],
+      "projects": [
+        "golf-ball-qc",
+        "bus-door-control",
+        "coffee-process"
+      ],
+      "image": "assets/img/work/s7-300-kit.webp",
+      "imageAlt": "Siemens S7-300 PLC training kit"
+    },
+    {
+      "id": "vision",
+      "title": "Machine vision for quality control",
+      "line": "Classification, detection and segmentation from dataset to a live Raspberry Pi 5 or Jetson deployment.",
+      "tools": [
+        "Python",
+        "PyTorch",
+        "TensorFlow",
+        "YOLOv8",
+        "OpenCV"
+      ],
+      "projects": [
+        "pcb-defect-vit",
+        "pcb-component-inspection",
+        "fabric-qc",
+        "wood-defect-segmentation"
+      ],
+      "image": "assets/img/work/pcb-inspection-gui.webp",
+      "imageAlt": "PCB inspection application marking detected components on a circuit board"
+    },
+    {
+      "id": "embedded",
+      "title": "Embedded and edge hardware",
+      "line": "Raspberry Pi 5, NVIDIA Jetson Orin Nano, Arduino and ESP32 bring-up, sensor interfacing and GUI deployment.",
+      "tools": [
+        "Raspberry Pi 5",
+        "Jetson Orin Nano",
+        "Arduino",
+        "ESP32"
+      ],
+      "projects": [
+        "hospital-agv-vision",
+        "parking-system",
+        "temperature-control"
+      ],
+      "image": "assets/img/work/rpi5-kit.webp",
+      "imageAlt": "Raspberry Pi 5 kit with camera and power supply used for the inspection stations"
+    }
+  ],
+  "experience": [
+    {
+      "role": "R&D Project Engineer (Internship)",
+      "org": "Control Easy Technology Sdn Bhd",
+      "location": "Seri Kembangan, Selangor, Malaysia",
+      "period": "11 March 2025 – 11 July 2025",
+      "summary": "Machine vision and control automation company. Supervisor rating: Excellent (Grade A).",
+      "points": [
+        "Delivered five quality-control applications (fabric classification and detection, wood defect segmentation, PCB component inspection, golf ball sorting), each as a PC version and a live Raspberry Pi 5 version.",
+        "Designed a 24 V DC proximity-sensor interface to a 3.3 V Raspberry Pi input through an OMRON G2R-1-S relay for galvanic isolation.",
+        "Trained on Siemens S7-300 (SCADA simulation), S7-200 (two 24RLCB11 smart relays) and S7-1200 (3-axis pneumatic pick and place) in SCL through TIA Portal.",
+        "Wrote the company's 259-page Open-Source AI Deep Learning technical manual."
+      ],
+      "tools": [
+        "Python",
+        "TensorFlow",
+        "PyTorch",
+        "YOLOv8",
+        "OpenCV",
+        "Roboflow",
+        "Raspberry Pi 5",
+        "TIA Portal"
+      ],
+      "projects": [
+        "fabric-qc",
+        "wood-defect-segmentation",
+        "pcb-component-inspection",
+        "golf-ball-qc"
+      ],
+      "image": "assets/img/work/siemens-plc-board.webp",
+      "imageAlt": "Siemens PLC training board with stack light at Control Easy",
+      "homePoints": [
+        "Delivered five quality-control applications, each on a PC and live on a Raspberry Pi 5.",
+        "Wired a 24 V DC proximity sensor to a 3.3 V Raspberry Pi input through an OMRON relay for isolation.",
+        "Trained on Siemens S7-300, S7-200 and S7-1200 PLCs, programming in SCL through TIA Portal.",
+        "Wrote the company's 259-page Open-Source AI Deep Learning technical manual."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Eng (Hons) Electrical and Electronic Engineering",
+      "school": "Asia Pacific University of Technology & Innovation (APU), Kuala Lumpur",
+      "period": "Studied 2020–2022 and 2024–2026",
+      "points": [
+        "Final year project: self-supervised Vision Transformer for PCB defect detection.",
+        "Modules: Switchgear and Protection; Power System Analysis; Generation, Transmission and Distribution; High Voltage Engineering; Electrical Machines; Power Electronics; Control Engineering; Machine Vision."
+      ],
+      "projects": [
+        "pcb-defect-vit",
+        "relay-coordination",
+        "hospital-agv-vision"
+      ]
+    },
+    {
+      "degree": "American High School Diploma",
+      "school": "Sama American School, Cairo, Egypt",
+      "period": "2017–2019",
+      "points": [],
+      "projects": []
+    }
+  ],
+  "skills": [
+    {
+      "domain": "Protection",
+      "items": [
+        "Phase and earth-fault overcurrent (ANSI 50/51, 50N/51N)",
+        "IDMT setting and coordination",
+        "CT ratio selection",
+        "Time–current curves",
+        "IEC 60255-151, IEEE C37.112"
+      ],
+      "projects": [
+        "relay-coordination",
+        "microgrid-protection"
+      ]
+    },
+    {
+      "domain": "Power systems",
+      "items": [
+        "Load flow (Newton-Raphson, Gauss-Seidel, Fast-Decoupled)",
+        "Transformer and alternator tests",
+        "Microgrids with PV and storage",
+        "Power electronic converters"
+      ],
+      "projects": [
+        "power-flow-10-bus",
+        "transformer-alternator",
+        "microgrid-technology",
+        "wind-energy-system"
+      ]
+    },
+    {
+      "domain": "Automation",
+      "items": [
+        "Siemens S7-300, S7-200, S7-1200",
+        "TIA Portal and SCL",
+        "Relay logic and isolation",
+        "Pneumatics",
+        "LabVIEW"
+      ],
+      "projects": [
+        "golf-ball-qc",
+        "bus-door-control",
+        "coffee-process"
+      ]
+    },
+    {
+      "domain": "Vision and AI",
+      "items": [
+        "Classification, detection, segmentation",
+        "Vision Transformers, YOLOv8, DINOv2",
+        "TensorFlow Lite int8, ONNX Runtime GPU",
+        "Dataset creation in Roboflow"
+      ],
+      "projects": [
+        "pcb-defect-vit",
+        "hospital-agv-vision",
+        "fabric-qc"
+      ]
+    },
+    {
+      "domain": "Hardware",
+      "items": [
+        "Raspberry Pi 5",
+        "NVIDIA Jetson Orin Nano",
+        "Arduino, ESP32",
+        "24 V DC sensors and relays"
+      ],
+      "projects": [
+        "golf-ball-qc",
+        "hospital-agv-vision",
+        "parking-system"
+      ]
+    },
+    {
+      "domain": "Software",
+      "items": [
+        "Python, C, C++, C#",
+        "MATLAB App Designer",
+        "Simulink, PowerWorld, LTspice",
+        "DIALux evo, SolidWorks, TinkerCAD"
+      ],
+      "projects": [
+        "relay-coordination",
+        "library-lighting",
+        "honeycomb-power-hub"
+      ]
+    }
+  ],
+  "toolIcons": [
+    {
+      "name": "Python",
+      "icon": "assets/icons/tools/python.svg"
+    },
+    {
+      "name": "PyTorch",
+      "icon": "assets/icons/tools/pytorch.svg"
+    },
+    {
+      "name": "TensorFlow",
+      "icon": "assets/icons/tools/tensorflow.svg"
+    },
+    {
+      "name": "OpenCV",
+      "icon": "assets/icons/tools/opencv.svg"
+    },
+    {
+      "name": "Siemens",
+      "icon": "assets/icons/tools/siemens.svg"
+    },
+    {
+      "name": "Raspberry Pi",
+      "icon": "assets/icons/tools/raspberry-pi.svg"
+    },
+    {
+      "name": "NVIDIA Jetson",
+      "icon": "assets/icons/tools/nvidia.svg"
+    },
+    {
+      "name": "Arduino",
+      "icon": "assets/icons/tools/arduino.svg"
+    },
+    {
+      "name": "C++",
+      "icon": "assets/icons/tools/c-plusplus.svg"
+    },
+    {
+      "name": "Streamlit",
+      "icon": "assets/icons/tools/streamlit.svg"
+    }
+  ],
+  "questions": [
+    {
+      "q": "Where are you based and can you work in the UAE?",
+      "a": "I live in Sharjah and hold a UAE Golden Visa, so no employer sponsorship is needed."
+    },
+    {
+      "q": "When can you start?",
+      "a": "Now. I graduated in 2026 and have no notice period."
+    },
+    {
+      "q": "Which roles are you looking for?",
+      "a": [
+        "Protection and control",
+        "Power systems",
+        "Industrial automation",
+        "Machine vision"
+      ],
+      "lead": "Graduate engineering roles in:"
+    },
+    {
+      "q": "Do you have hands-on experience?",
+      "a": "Yes. I worked as an R&D Project Engineer at Control Easy Technology and delivered five quality-control applications there."
+    },
+    {
+      "q": "Which languages do you work in?",
+      "a": "Arabic (native) and English (fluent)."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "MATLAB Onramp",
+      "issuer": "MathWorks",
+      "date": "1 September 2026",
+      "href": "assets/Matlab on-Ramp certificate.pdf",
+      "thumb": "assets/img/certs/matlab-on-ramp-certificate.webp"
+    },
+    {
+      "name": "Simulink Onramp",
+      "issuer": "MathWorks",
+      "date": "3 September 2026",
+      "href": "assets/Simulink on-Ramp certificate.pdf",
+      "thumb": "assets/img/certs/simulink-on-ramp-certificate.webp"
+    },
+    {
+      "name": "MATLAB Desktop Tools and Troubleshooting Scripts",
+      "issuer": "MathWorks",
+      "date": "4 September 2026",
+      "href": "assets/MATLAB Desktop Tools and Troubleshooting Scripts.pdf",
+      "thumb": "assets/img/certs/matlab-desktop-tools-and-troubleshooting-scripts.webp"
+    },
+    {
+      "name": "Explore Data with MATLAB Plots",
+      "issuer": "MathWorks",
+      "date": "14 September 2026",
+      "href": "assets/Explore Data with MATLAB Plots.pdf",
+      "thumb": "assets/img/certs/explore-data-with-matlab-plots.webp"
+    },
+    {
+      "name": "Make and Manipulate Matrices",
+      "issuer": "MathWorks",
+      "date": "14 September 2026",
+      "href": "assets/Make and Manipulate Matrices.pdf",
+      "thumb": "assets/img/certs/make-and-manipulate-matrices.webp"
+    },
+    {
+      "name": "Calculations with Vectors and Matrices",
+      "issuer": "MathWorks",
+      "date": "14 September 2026",
+      "href": "assets/Calculations with Vectors and Matrices.pdf",
+      "thumb": "assets/img/certs/calculations-with-vectors-and-matrices.webp"
+    },
+    {
+      "name": "Core MATLAB Skills learning path",
+      "issuer": "MathWorks",
+      "date": "14 September 2026",
+      "href": "assets/Core MATLAB Skills.pdf",
+      "thumb": "assets/img/certs/core-matlab-skills.webp"
+    },
+    {
+      "name": "Machine Learning Onramp",
+      "issuer": "MathWorks",
+      "date": "1 October 2026",
+      "href": "assets/Machine Learning Onramp.pdf",
+      "thumb": "assets/img/certs/machine-learning-onramp.webp"
+    }
+  ],
+  "badge": {
+    "name": "Verified digital badge",
+    "issuer": "Credly",
+    "href": "https://www.credly.com/earner/earned/badge/26264633-9031-4a9e-a353-98b5489c7375",
+    "image": "assets/Credly.png"
+  },
+  "projects": [
+    {
+      "slug": "relay-coordination",
+      "featured": true,
+      "order": 1,
+      "title": "Overcurrent relay coordination study",
+      "category": "power",
+      "context": "Switchgear and Protection module, APU",
+      "year": "2026",
+      "role": "Individual assignment",
+      "summary": "Settings and time grading for ten IDMT relays on a 230 kV generation and transmission system, with a MATLAB application for the curves.",
+      "problem": "Ten overcurrent relays protect three generators, their step-up transformers and the 230 kV lines of a 7-bus system. Each needs a pickup and time setting that clears its own faults first and backs up its neighbour.",
+      "objective": "Calculate the plug setting, time multiplier setting and operating time of relays R1 to R10, verify selectivity, and plot every time–current curve in a MATLAB App Designer interface.",
+      "approach": [
+        "Normal currents from the bus loads (60, 75 and 85 MVA at 230 kV) and the given three-phase fault levels at each bus.",
+        "CT ratios from 150/1 to 3000/1; pickup at 1.2 to 1.5 times normal current; upstream pickup at least 1.2 times downstream where the network allowed.",
+        "IEC Normal Inverse characteristic, t = TMS × 0.14 / (PSM^0.02 − 1), with a 0.2 to 0.4 s coordination interval.",
+        "A literature review of how distributed generation, CT saturation and bidirectional flow disturb overcurrent coordination."
+      ],
+      "specs": [
+        [
+          "System",
+          "7 buses, 3 generators (13.8–18 kV), 230 kV lines"
+        ],
+        [
+          "Relays",
+          "R1–R10, IEC Normal Inverse"
+        ],
+        [
+          "CT ratios",
+          "150/1 to 3000/1"
+        ],
+        [
+          "Verified grading",
+          "0.30 s, 0.30 s, 0.70 s and 0.80 s on the four lines"
+        ]
+      ],
+      "results": [
+        "Primary operating times from 0.30 s (R10) to 1.31 s (generator relays).",
+        "Every primary and backup pair separated by 0.3 to 0.8 s.",
+        "Maximum calculation error of 1.00% between the application and hand calculation."
+      ],
+      "tools": [
+        "MATLAB",
+        "MATLAB App Designer"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/relay-sld.webp",
+          "alt": "Single-line diagram of the 7-bus system with relays R1 to R10 and their CT ratios"
+        }
+      ],
+      "needsInput": [
+        "A screenshot of the MATLAB App Designer interface and its TCC plot",
+        "The PDF report, if it may be shared"
+      ]
+    },
+    {
+      "slug": "microgrid-protection",
+      "featured": true,
+      "order": 2,
+      "title": "Phase and earth-fault protection of an 11 kV network",
+      "category": "power",
+      "context": "Switchgear and Protection open-ended lab, APU",
+      "year": "2025",
+      "role": "Individual lab",
+      "summary": "Simulink model of a 33/11 kV radial microgrid with phase and earth-fault relays tested under four fault types and six inverse curves.",
+      "problem": "A radial 11 kV network fed from a 33 kV grid needs overcurrent protection that trips selectively and still clears a fault when the primary relay fails.",
+      "objective": "Build the network in Simulink with overcurrent relays on the distribution lines, then compare relay characteristics and fault types.",
+      "approach": [
+        "33 kV source, delta–wye transformer to 11 kV, three buses with PQ loads, CTs and circuit breakers.",
+        "Relays with separate phase (50/51) and earth (50N/51N) units, set to six IEC and IEEE inverse curves in turn.",
+        "Single-line-to-ground, double-line-to-ground and three-phase faults on line 2; a backup test with the primary relay disabled."
+      ],
+      "specs": [
+        [
+          "Network",
+          "33 kV grid, 11 kV radial, 3 buses"
+        ],
+        [
+          "Curves compared",
+          "IEC NI, VI, EI; IEEE MI, VI, EI"
+        ],
+        [
+          "Coordination interval",
+          "0.2 s"
+        ]
+      ],
+      "results": [
+        "Trip times from 0.21 s (IEEE Extremely Inverse) to 0.47 s (IEC Normal Inverse) for a line-to-ground fault.",
+        "Backup relay tripped at 0.47 s after the primary's 0.27 s signal: the 0.2 s interval held.",
+        "Asymmetrical faults tripped both phase and earth units; the three-phase fault tripped the phase unit only, as expected with no zero-sequence current."
+      ],
+      "tools": [
+        "MATLAB",
+        "Simulink"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/microgrid-simulink.webp",
+          "alt": "Simulink model of the 33/11 kV radial network with relays and breakers"
+        },
+        {
+          "src": "assets/img/work/microgrid-relay-settings.webp",
+          "alt": "Relay block settings with IEC Normal Inverse selected for phase and earth protection"
+        },
+        {
+          "src": "assets/img/work/microgrid-fault-scope.webp",
+          "alt": "Scope traces of voltage, current and trip signals during a fault"
+        }
+      ],
+      "needsInput": []
+    },
+    {
+      "slug": "power-flow-10-bus",
+      "featured": false,
+      "order": 3,
+      "title": "Power flow analysis of a 10-bus network",
+      "category": "power",
+      "context": "Power System Analysis open-ended lab, APU",
+      "year": "2026",
+      "role": "Individual lab",
+      "summary": "Newton-Raphson, Gauss-Seidel and Fast-Decoupled solutions in MATLAB and PowerWorld, with a 35 MW load increase.",
+      "problem": "How does a 10-bus network's voltage profile and loss change when load grows at two buses?",
+      "objective": "Model the network in MATLAB and PowerWorld Simulator, solve it with three methods and compare the base and loaded cases.",
+      "approach": [
+        "Bus and line data entered in MATLAB scripts for each solver; the same network built in PowerWorld.",
+        "Base case solved, then 35 MW added at Buses 3 and 6."
+      ],
+      "specs": [
+        [
+          "Methods",
+          "Newton-Raphson, Gauss-Seidel, Fast-Decoupled"
+        ],
+        [
+          "Tools",
+          "MATLAB, PowerWorld Simulator"
+        ]
+      ],
+      "results": [
+        "Newton-Raphson converged in three iterations.",
+        "Base case: all voltages within limits, total active loss 6.15 MW.",
+        "With 35 MW added: Bus 3 fell to 0.969 pu and losses rose to 9.80 MW."
+      ],
+      "tools": [
+        "MATLAB",
+        "PowerWorld"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/powerworld-10bus.webp",
+          "alt": "PowerWorld one-line diagram of the 10-bus network"
+        },
+        {
+          "src": "assets/img/work/loadflow-matlab.webp",
+          "alt": "MATLAB output of bus voltages and line flows"
+        }
+      ],
+      "needsInput": []
+    },
+    {
+      "slug": "pcb-defect-vit",
+      "featured": true,
+      "order": 4,
+      "title": "Self-supervised Vision Transformer for PCB defect detection",
+      "category": "vision",
+      "context": "Final year project, APU",
+      "year": "2026",
+      "role": "Individual final year project",
+      "summary": "Automated PCB inspection with a self-supervised Vision Transformer and a detector, optimised for GPU inference.",
+      "problem": "Manual inspection of printed circuit boards is slow and labelled defect data is scarce.",
+      "objective": "Classify and locate PCB defects with a model pre-trained without labels, then run it fast enough for an inspection line.",
+      "approach": [
+        "Self-supervised pre-training (SimCLR) of a MaxViT-Small backbone; RF-DETR and DINOv2 for detection.",
+        "Export to ONNX Runtime with CUDA for GPU inference; Streamlit interface showing detections."
+      ],
+      "specs": [
+        [
+          "Defect classes",
+          "22"
+        ],
+        [
+          "Inference",
+          "ONNX Runtime CUDA"
+        ]
+      ],
+      "results": [
+        "77.50% test accuracy and a weighted F1 score of 0.8281 across 22 classes.",
+        "68.83% mAP@50.",
+        "37.25 frames per second after GPU optimisation."
+      ],
+      "tools": [
+        "PyTorch",
+        "SimCLR",
+        "MaxViT-Small",
+        "RF-DETR",
+        "DINOv2",
+        "ONNX Runtime",
+        "Streamlit",
+        "OpenCV",
+        "Roboflow"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/fyp-detection-gui.webp",
+          "alt": "Streamlit interface showing an input board and its detection results"
+        },
+        {
+          "src": "assets/img/work/fyp-pcb-board.webp",
+          "alt": "Printed circuit board used in testing"
+        },
+        {
+          "src": "assets/img/work/fyp-poster.webp",
+          "alt": "Final year project poster"
+        }
+      ],
+      "needsInput": [
+        "Dataset size and source",
+        "The thesis PDF, if it may be shared"
+      ]
+    },
+    {
+      "slug": "hospital-agv-vision",
+      "featured": true,
+      "order": 5,
+      "title": "Vision system for a hospital logistics AGV",
+      "category": "vision",
+      "context": "Group design project, APU",
+      "year": "2025",
+      "role": "Team project: vision subsystem",
+      "summary": "Object detection on an NVIDIA Jetson for an automated guided vehicle that moves food and materials in hospitals.",
+      "problem": "Nurses lose time to logistics, and manual transport adds infection exposure and collision risk.",
+      "objective": "Give the vehicle reliable detection of people and obstacles on edge hardware.",
+      "approach": [
+        "YOLOv8 trained on a Roboflow dataset, exported to ONNX Runtime GPU on a Jetson Orin Nano.",
+        "ZED 2i stereo camera; ROS2 integration; PyQt5 operator interface."
+      ],
+      "specs": [
+        [
+          "Compute",
+          "NVIDIA Jetson Orin Nano"
+        ],
+        [
+          "Camera",
+          "ZED 2i"
+        ]
+      ],
+      "results": [
+        "98.99% mAP@50, 98.66% precision and 97.85% recall."
+      ],
+      "tools": [
+        "NVIDIA Jetson Orin Nano",
+        "ZED 2i",
+        "YOLOv8",
+        "PyTorch",
+        "ONNX Runtime",
+        "ROS2",
+        "PyQt5",
+        "Roboflow"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/agv-robot.webp",
+          "alt": "The automated guided vehicle chassis in the lab"
+        },
+        {
+          "src": "assets/img/work/agv-architecture.webp",
+          "alt": "System block diagram of the AGV: vision, navigation and security paths"
+        },
+        {
+          "src": "assets/img/work/agv-wiring.webp",
+          "alt": "Wiring layout of the AGV electronics"
+        }
+      ],
+      "needsInput": [
+        "Team size and the names of the other subsystems' owners"
+      ]
+    },
+    {
+      "slug": "pcb-component-inspection",
+      "featured": true,
+      "order": 6,
+      "title": "PCB component inspection application",
+      "category": "vision",
+      "context": "Internship, Control Easy",
+      "year": "2025",
+      "role": "Individual internship project",
+      "summary": "YOLOv8 inspection that reports each component as Good, Partial or Fail, with checks that catch missing parts and empty sockets.",
+      "problem": "The detector could not flag a component that was missing entirely, and it mistook empty IC sockets for chips.",
+      "objective": "Inspect a known board design and report the state of every expected component, on a PC and live on a Raspberry Pi 5.",
+      "approach": [
+        "A golden-template bill of materials checked against the detections, giving Good, Partial or Fail per component.",
+        "Colour analysis to confirm a PIC16F877A chip; Canny edge density and silver-pixel share to reject an empty MAX232 socket."
+      ],
+      "specs": [
+        [
+          "Platforms",
+          "PC and Raspberry Pi 5 with live camera"
+        ]
+      ],
+      "results": [
+        "Missing components and empty sockets reported correctly, which the model alone could not do."
+      ],
+      "tools": [
+        "Python",
+        "YOLOv8",
+        "OpenCV",
+        "Roboflow",
+        "Raspberry Pi 5"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/pcb-inspection-gui.webp",
+          "alt": "PCB inspection application marking detected components on the board"
+        },
+        {
+          "src": "assets/img/work/pcb-inspection-gui-hd.webp",
+          "alt": "PCB inspection application, full window"
+        }
+      ],
+      "needsInput": []
+    },
+    {
+      "slug": "fabric-qc",
+      "featured": false,
+      "order": 7,
+      "title": "Fabric quality control",
+      "category": "vision",
+      "context": "Internship, Control Easy",
+      "year": "2025",
+      "role": "Individual internship project",
+      "summary": "Classification and defect detection for fabric, retrained on a larger dataset and quantised for the Raspberry Pi 5.",
+      "problem": "The first fabric classifier reached only about 70 to 75% accuracy.",
+      "objective": "Raise accuracy and run the models in real time on a Raspberry Pi 5 with an industrial camera.",
+      "approach": [
+        "Dataset grown from 853 to 3,256 images (11,894 after augmentation), split 60/20/20 in Roboflow.",
+        "Models converted to 8-bit TensorFlow Lite; Tkinter GUI on PC and Pi; Dehang industrial camera."
+      ],
+      "specs": [
+        [
+          "Dataset",
+          "3,256 images, 11,894 after augmentation"
+        ],
+        [
+          "Deployment",
+          "TensorFlow Lite int8 on Raspberry Pi 5"
+        ]
+      ],
+      "results": [
+        "Validation accuracy rose from about 75% to over 91%."
+      ],
+      "tools": [
+        "Python",
+        "TensorFlow",
+        "Roboflow",
+        "Tkinter",
+        "Raspberry Pi 5"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/fabric-detection-gui.webp",
+          "alt": "Fabric object detection application"
+        },
+        {
+          "src": "assets/img/work/fabric-classification-gui.webp",
+          "alt": "Fabric classification application"
+        },
+        {
+          "src": "assets/img/work/dehang-camera.webp",
+          "alt": "Dehang machine vision camera on its stand"
+        }
+      ],
+      "needsInput": []
+    },
+    {
+      "slug": "wood-defect-segmentation",
+      "featured": false,
+      "order": 8,
+      "title": "Wood defect segmentation",
+      "category": "vision",
+      "context": "Internship, Control Easy",
+      "year": "2025",
+      "role": "Individual internship project",
+      "summary": "Pixel-level YOLOv11 segmentation of holes and scratches on wooden boards, with a quality score.",
+      "problem": "Detecting that a defect exists is not enough to grade a board; its area matters.",
+      "objective": "Segment defects on wooden boards and turn their area into a quality percentage.",
+      "approach": [
+        "Polygon annotation of defects; YOLOv11 segmentation training.",
+        "Quality score from the share of defect pixels; PC and Raspberry Pi 5 versions."
+      ],
+      "specs": [
+        [
+          "Task",
+          "Instance segmentation"
+        ]
+      ],
+      "results": [
+        "Working segmentation application on PC and Raspberry Pi 5."
+      ],
+      "tools": [
+        "Python",
+        "YOLOv11",
+        "Roboflow",
+        "Raspberry Pi 5"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/wood-segmentation-gui-hd.webp",
+          "alt": "Wood segmentation application showing defect masks"
+        }
+      ],
+      "needsInput": [
+        "Final dataset size (the report and the slides give different counts)"
+      ]
+    },
+    {
+      "slug": "golf-ball-qc",
+      "featured": true,
+      "order": 9,
+      "title": "Automated golf ball inspection station",
+      "category": "automation",
+      "context": "Internship, Control Easy",
+      "year": "2025",
+      "role": "Individual internship project",
+      "summary": "A 24 V proximity sensor triggers a camera on a Raspberry Pi 5 through a relay, and a Vision Transformer sorts the balls.",
+      "problem": "An industrial 24 V DC sensor cannot drive a 3.3 V Raspberry Pi input directly, and the first model failed on the live camera.",
+      "objective": "Detect a ball on a turntable, capture and classify it in real time, and test the station on the company's Industry 4.0 machine.",
+      "approach": [
+        "OMRON G2R-1-S relay: sensor drives the coil (A1/A2); COM and NO switch GPIO4 to ground for galvanic isolation.",
+        "Live failures traced to the difference between training and webcam images; dataset rebuilt with the deployment webcam.",
+        "EfficientNet replaced with a more robust Vision Transformer."
+      ],
+      "specs": [
+        [
+          "Sensor",
+          "24 V DC proximity sensor"
+        ],
+        [
+          "Isolation",
+          "OMRON G2R-1-S relay"
+        ],
+        [
+          "Controller",
+          "Raspberry Pi 5, GPIO4"
+        ]
+      ],
+      "results": [
+        "Station ran on the company's Industry 4.0 machine."
+      ],
+      "tools": [
+        "Raspberry Pi 5",
+        "Python",
+        "Vision Transformer",
+        "OMRON relay"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/omron-relay.webp",
+          "alt": "OMRON relay wired for the sensor interface"
+        },
+        {
+          "src": "assets/img/work/proximity-sensor.webp",
+          "alt": "The 24 V proximity sensor"
+        },
+        {
+          "src": "assets/img/work/psu-wiring.webp",
+          "alt": "24 V power supply wiring"
+        },
+        {
+          "src": "assets/img/work/rpi5-kit.webp",
+          "alt": "Raspberry Pi 5 kit and camera"
+        }
+      ],
+      "needsInput": [
+        "A photograph of the complete station on the turntable"
+      ]
+    },
+    {
+      "slug": "bus-door-control",
+      "featured": false,
+      "order": 10,
+      "title": "Automated bus door control",
+      "category": "automation",
+      "context": "University project",
+      "role": "",
+      "summary": "PLC and pneumatic control sequence for safe automatic opening and closing of a bus door.",
+      "tools": [
+        "PLC",
+        "Pneumatics"
+      ],
+      "images": [],
+      "needsInput": [
+        "Module, year, PLC model, sequence or ladder screenshot"
+      ]
+    },
+    {
+      "slug": "parking-system",
+      "featured": false,
+      "order": 11,
+      "title": "Residential smart parking system",
+      "category": "embedded",
+      "context": "Microprocessor and Embedded Systems, APU",
+      "year": "2025",
+      "role": "Team project",
+      "summary": "Arduino entry and exit control, parking-space detection and a status display, tested module by module.",
+      "tools": [
+        "Arduino",
+        "Sensors"
+      ],
+      "images": [],
+      "needsInput": [
+        "Your own part of the team work",
+        "A photograph or Tinkercad screenshot"
+      ]
+    },
+    {
+      "slug": "medication-scanner",
+      "featured": false,
+      "order": 12,
+      "title": "Medication scanner and obstacle detection",
+      "category": "vision",
+      "context": "University project",
+      "role": "",
+      "summary": "Python application on a Jetson for medication image scanning and obstacle detection.",
+      "tools": [
+        "Python",
+        "NVIDIA Jetson"
+      ],
+      "images": [],
+      "needsInput": [
+        "Module, year, screenshot"
+      ]
+    },
+    {
+      "slug": "hand-gesture",
+      "featured": false,
+      "order": 13,
+      "title": "Hand gesture recognition",
+      "category": "vision",
+      "context": "University project",
+      "role": "",
+      "summary": "Python and OpenCV system recognising hand gestures from a live camera.",
+      "tools": [
+        "Python",
+        "OpenCV"
+      ],
+      "images": [],
+      "needsInput": [
+        "Module, year, screenshot"
+      ]
+    },
+    {
+      "slug": "fruit-inspection",
+      "featured": false,
+      "order": 14,
+      "title": "Baby carrot freshness inspection",
+      "category": "vision",
+      "context": "Machine Vision and Intelligence group assignment, APU",
+      "year": "2025",
+      "role": "Freshness inspection (vision and AI), Tkinter GUI integration, and report formatting/writing; four-member group project",
+      "summary": "Baby carrots graded fresh, aging or spoiled two ways: an OpenCV pipeline reading texture, dark spots, mould and colour, and a Roboflow object-detection model trained on 281 annotated frames, both run from one Tkinter app.",
+      "problem": "Manual freshness checks on produce are slow and inconsistent. The team had to inspect baby carrots for freshness, ripeness and disease, and classify them, using both a vision-based and an AI-based method.",
+      "objective": "Detect fresh, aging and spoiled baby carrots in camera video with a rule-based vision method and with an AI model, and bring the team's inspection tasks into one application.",
+      "approach": [
+        "Recorded baby carrots at three stages, fresh, aging and spoiled, with the lab camera in MVS, then split the videos into frames with OpenCV.",
+        "Vision method: Laplacian variance for surface roughness, a grayscale threshold to count and size dark spots, an HSV mask for mould, and HSV colour to tell bright orange from dull; each carrot is boxed and labelled.",
+        "AI method: annotated 281 frames in Roboflow, trained a Roboflow 3.0 object-detection model, and ran it over the video in Python with boxes, labels and confidence scores.",
+        "Built the team application in Tkinter: pick a member's task and a vision- or AI-based method, open the camera or a file, and watch results live; video runs in its own thread so the window does not freeze.",
+        "Fixed lag during live AI inspection by synchronising frames instead of processing each one as it arrived, and retuned the HSV values and lighting after glare and shadows broke detection."
+      ],
+      "specs": [
+        [
+          "Classes",
+          "Fresh, aging, spoiled"
+        ],
+        [
+          "Dataset",
+          "281 images: 235 train, 30 validation, 16 test"
+        ],
+        [
+          "Preprocessing",
+          "640×640; 3 outputs per training example; rotation between −15° and +15°"
+        ],
+        [
+          "Model",
+          "Roboflow 3.0 Object Detection (Fast)"
+        ],
+        [
+          "Camera software",
+          "MVS"
+        ]
+      ],
+      "results": [
+        "Roboflow model: mAP 99.2%, precision 98.5% and recall 98.6%. These are object-detection evaluation percentages reported by the model dashboard, not classification accuracy, latency or physical measurements.",
+        "All 281 images are frames from the team's own recorded videos, so these scores describe that footage rather than new carrots.",
+        "The vision method sorted carrots into fresh, aging and spoiled and improved with each round of HSV and lighting changes, though it was not perfect.",
+        "The application ran freshness and disease inspection, vision- and AI-based, from a live camera or a file; ripeness and classification were not delivered."
+      ],
+      "tools": [
+        "Python",
+        "OpenCV",
+        "Roboflow",
+        "Tkinter"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/carrot-gui-ai.webp",
+          "alt": "Carrot inspection app running the Roboflow model: fresh, aging and spoiled carrots boxed with confidence scores"
+        },
+        {
+          "src": "assets/img/work/carrot-vision-output.webp",
+          "alt": "Vision-based output: carrots labelled fresh, aging and spoiled from colour, spots and texture"
+        },
+        {
+          "src": "assets/img/work/carrot-roboflow-dataset.webp",
+          "alt": "Roboflow dataset: 281 images split 235, 30 and 16, resized to 640×640"
+        }
+      ],
+      "needsInput": [],
+      "legacyTitles": [
+        "Fruit inspection"
+      ],
+      "limitations": [
+        "The 281 images are extracted frames from the team’s own videos: 235 training, 30 validation and 16 test images. Nearby frames may be correlated. The report does not establish a video-disjoint split or testing on independent new carrots, so generalisation to new produce, cameras or lighting is unverified.",
+        "The dashboard reports mAP 99.2%, precision 98.5% and recall 98.6%. It does not identify the mAP IoU/averaging setting or clearly name the evaluation partition, so these must not be presented as independently verified test-set performance or a production guarantee.",
+        "The task-distribution table assigns Badr freshness inspection, GUI integration and report formatting/writing. The disease component was a teammate’s work integrated into the group application; ripeness and classification were not delivered. No individual ownership of the whole group system is claimed.",
+        "Previously listed as “Fruit inspection”; the original project URL is retained. No source code screenshot or private Roboflow credential is published."
+      ],
+      "sources": [
+        "Machine Vision and Intelligence group report: task distribution on PDF page 7, freshness work on pages 7–19, dashboard and dataset figures on pages 17–18, and GUI/integration discussion on pages 40–44."
+      ]
+    },
+    {
+      "slug": "honeycomb-power-hub",
+      "featured": false,
+      "order": 15,
+      "title": "Modular smart power hub",
+      "category": "power",
+      "context": "Product Creation Technology, APU",
+      "year": "2026",
+      "role": "Individual assignment",
+      "summary": "A modular, honeycomb-shaped power hub designed in SolidWorks, so one broken socket does not scrap the whole strip.",
+      "problem": "A power strip has a fixed number of outlets; when one socket or its wiring fails, the whole unit is thrown away.",
+      "tools": [
+        "SolidWorks"
+      ],
+      "images": [],
+      "needsInput": [
+        "SolidWorks render of the hub"
+      ]
+    },
+    {
+      "slug": "transformer-alternator",
+      "featured": false,
+      "order": 16,
+      "title": "Transformer and alternator testing",
+      "category": "power",
+      "context": "Electrical Machines 2 lab, APU",
+      "year": "2023",
+      "role": "Individual lab",
+      "summary": "Ratio, open-circuit, short-circuit and load tests on a single-phase transformer and a three-phase alternator.",
+      "tools": [
+        "Electrical machines laboratory"
+      ],
+      "images": [],
+      "needsInput": [
+        "Photograph of the bench set-up"
+      ]
+    },
+    {
+      "slug": "microgrid-technology",
+      "featured": false,
+      "order": 17,
+      "title": "Microgrid with solar PV and battery storage",
+      "category": "power",
+      "context": "Generation, Transmission and Distribution, APU",
+      "year": "2024",
+      "role": "Individual assignment",
+      "summary": "Simulink microgrid with PV, battery state-of-charge control and household and commercial loads, plus power-factor correction.",
+      "tools": [
+        "Simulink"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/gtd-microgrid-simulink.webp",
+          "alt": "Simulink model of the microgrid with PV, battery and loads"
+        }
+      ],
+      "needsInput": []
+    },
+    {
+      "slug": "wind-energy-system",
+      "featured": false,
+      "order": 18,
+      "title": "Off-grid wind and battery power conversion",
+      "category": "power",
+      "context": "Power Electronics, APU",
+      "year": "2025",
+      "role": "Individual assignment",
+      "summary": "Rectifier, DC-DC converter, battery and three-phase inverter sized and simulated for an off-grid wind turbine.",
+      "tools": [
+        "Simulink"
+      ],
+      "images": [],
+      "needsInput": [
+        "Simulink screenshot"
+      ]
+    },
+    {
+      "slug": "sound-purifier",
+      "featured": false,
+      "order": 19,
+      "title": "Speech enhancement filter",
+      "category": "signals",
+      "context": "Digital Signal Processing, APU",
+      "year": "2025",
+      "role": "Individual assignment",
+      "summary": "MATLAB signal-processing model that removes unwanted components from recorded speech.",
+      "tools": [
+        "MATLAB"
+      ],
+      "images": [],
+      "needsInput": []
+    },
+    {
+      "slug": "bjt-amplifier",
+      "featured": false,
+      "order": 20,
+      "title": "BJT audio amplifier",
+      "category": "signals",
+      "context": "Analogue Electronics, APU",
+      "role": "",
+      "summary": "Simulated and analysed a BJT amplifier for audio signals.",
+      "tools": [
+        "MATLAB"
+      ],
+      "images": [],
+      "needsInput": [
+        "Year"
+      ]
+    },
+    {
+      "slug": "z-transform",
+      "featured": false,
+      "order": 21,
+      "title": "Discrete-time system with the Z-transform",
+      "category": "signals",
+      "context": "Signals and systems lab, APU",
+      "year": "2023",
+      "role": "Individual lab",
+      "summary": "Step, impulse and frequency response of a discrete-time system computed in MATLAB.",
+      "tools": [
+        "MATLAB"
+      ],
+      "images": [],
+      "needsInput": []
+    },
+    {
+      "slug": "fm-modulation",
+      "featured": false,
+      "order": 22,
+      "title": "FM modulation and demodulation",
+      "category": "signals",
+      "context": "Communication engineering module, APU",
+      "role": "",
+      "summary": "LabVIEW model for FM signal generation, modulation and demodulation.",
+      "tools": [
+        "LabVIEW"
+      ],
+      "images": [],
+      "needsInput": [
+        "Year, screenshot"
+      ]
+    },
+    {
+      "slug": "temperature-control",
+      "featured": false,
+      "order": 23,
+      "title": "Temperature control for a batch reactor",
+      "category": "embedded",
+      "context": "Sensors and Actuators assignment, APU",
+      "year": "2023",
+      "role": "Individual assignment",
+      "summary": "Proposed closed-loop temperature control for a steam-jacketed batch reactor, alongside a separate simulated Arduino monitoring and alarm demonstration in Tinkercad. The demonstration alarms above 37.5 °C; it does not establish control of a physical reactor or steam valve.",
+      "problem": "A batch reactor's temperature sets how fast the reaction runs and how pure the product is, so it has to stay in range as heating and cooling loads change.",
+      "objective": "Design a monitoring and control system for the reactor's temperature and show how its sensor, controller and actuator work together.",
+      "approach": [
+        "Proposed process-control arrangement: a Fieldbus temperature transmitter reports to the temperature controller; its 4–20 mA output is converted by a transducer to a 3–15 PSI signal for an air-to-open steam valve on the reactor jacket.",
+        "Worked out the controller action: with an air-to-open steam valve, a rising temperature must lower the controller output, so the controller is set to reverse action.",
+        "The separate Arduino/Tinkercad demonstration described in the report reads a TMP36 temperature sensor in °C and °F and includes distance/motion sensing, LCD indications, a buzzer, warning LED and motor behaviour in its example code.",
+        "In that demonstration code, above 37.5 °C the buzzer and LED switch on and the motor stops; the report also describes a 30 cm proximity condition and a motion alert. This is monitoring/alarm logic rather than demonstrated closed-loop temperature regulation."
+      ],
+      "specs": [
+        [
+          "Controller",
+          "Arduino Uno for the monitoring/alarm demonstration; a separate process controller is proposed for the reactor"
+        ],
+        [
+          "Sensors",
+          "TMP36 temperature, ultrasonic distance, PIR motion"
+        ],
+        [
+          "Alarm point",
+          "37.5 °C"
+        ],
+        [
+          "Loop signals",
+          "4–20 mA from the controller, 3–15 PSI to the valve"
+        ]
+      ],
+      "tools": [
+        "LabVIEW",
+        "Arduino",
+        "TinkerCAD"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/reactor-tinkercad.webp",
+          "alt": "Tinkercad circuit: Arduino Uno with a TMP36 temperature sensor, a 16×2 LCD, two push buttons and three LEDs on a breadboard"
+        }
+      ],
+      "needsInput": [
+        "Confirm the LabVIEW front panel and block diagram in the report are your own before showing them (they may come from the referenced paper)",
+        "Simulation result or screenshot of the running Tinkercad circuit"
+      ],
+      "limitations": [
+        "The steam-jacketed reactor, Fieldbus transmitter, controller, I/P transducer and pneumatic valve form a proposed process-control arrangement. The provided evidence does not demonstrate an implemented or commissioned physical reactor loop, set-point tracking or control-performance measurements.",
+        "The implemented educational demonstration is a simulated Arduino temperature monitor and alarm in Tinkercad. Its circuit figure does not establish every peripheral mentioned in the example code. LabVIEW material remains listed as part of the source record; authorship and independent implementation of those diagrams have not been established, so they are not presented as verified original experimental results."
+      ],
+      "sources": [
+        "Sensors and Actuators assignment (DOCX), Tinkercad circuit/code section and process-control discussion/conclusion; source paragraphs 70–106."
+      ]
+    },
+    {
+      "slug": "automotive-part-control",
+      "featured": false,
+      "order": 24,
+      "title": "Automotive part control system",
+      "category": "automation",
+      "context": "University project",
+      "role": "",
+      "summary": "C program for handling and checking automotive parts.",
+      "tools": [
+        "C"
+      ],
+      "images": [],
+      "needsInput": [
+        "Module, year, what the program checked"
+      ]
+    },
+    {
+      "slug": "coffee-process",
+      "featured": false,
+      "order": 25,
+      "title": "Coffee making process control",
+      "category": "automation",
+      "context": "University project",
+      "role": "",
+      "summary": "LabVIEW model that sequences, monitors and controls the steps of coffee preparation.",
+      "tools": [
+        "LabVIEW"
+      ],
+      "images": [],
+      "needsInput": [
+        "Module, year, front-panel screenshot"
+      ]
+    },
+    {
+      "slug": "vaccination-centre",
+      "featured": false,
+      "order": 26,
+      "title": "Vaccination centre system",
+      "category": "software",
+      "context": "University project",
+      "role": "",
+      "summary": "Python program that organises vaccination-centre records and the service flow.",
+      "tools": [
+        "Python"
+      ],
+      "images": [],
+      "needsInput": [
+        "Module, year"
+      ]
+    },
+    {
+      "slug": "vaccination-inventory",
+      "featured": false,
+      "order": 27,
+      "title": "Vaccine inventory system",
+      "category": "software",
+      "context": "University project",
+      "role": "",
+      "summary": "C++ program that tracks vaccine stock, records and updates.",
+      "tools": [
+        "C++"
+      ],
+      "images": [],
+      "needsInput": [
+        "Module, year"
+      ]
+    },
+    {
+      "slug": "library-lighting",
+      "featured": false,
+      "order": 28,
+      "title": "Two-level library lighting design",
+      "category": "software",
+      "context": "Lighting design assignment, APU",
+      "year": "2023",
+      "role": "Individual assignment",
+      "summary": "Lighting scheme for a client's two-storey library refurbishment in DIALux evo 11, simulated with and without daylight and checked room by room for lighting power density.",
+      "problem": "A client renovating a small library wanted a new lighting scheme that meets lighting standards and looks good, while using less energy and money without lowering the quality of the light.",
+      "objective": "Model the library from the client's floor plan and design an energy-efficient lighting scheme for every room and hall on both levels.",
+      "approach": [
+        "Built both storeys, 124 m by 76 m, in DIALux evo 11 from the client's plan, with rooms, windows, doors, materials and furniture.",
+        "Level 1 holds a meeting room, kitchen, librarian room, checkout desks, history room, washrooms and the main reading hall; level 2 adds a second meeting room, a computer lab, a mechanical room and storage.",
+        "Chose luminaires by task: RZB Less is More Flex PRO LED strips light the bookshelves, Philips BY121P LED luminaires give general light in the reading halls, and Philips RC136B, RS772B, SM400C and RC463B luminaires light the rooms.",
+        "Simulated every space with and without daylight, then summed fixture power and worked out daily energy and lighting power density for each room.",
+        "Painted the reading halls a soft peach yellow to help readers concentrate, with red carpet throughout and tiles in the washrooms."
+      ],
+      "specs": [
+        [
+          "Software",
+          "DIALux evo 11"
+        ],
+        [
+          "Building",
+          "Two storeys, 124 m by 76 m"
+        ],
+        [
+          "Opening hours",
+          "Library schedule: 14 hours a day; some source room calculations instead use 8 hours"
+        ],
+        [
+          "Level 1 hall",
+          "12 SG, 310 RZB and 45 Philips BY121P luminaires"
+        ]
+      ],
+      "results": [
+        "Report’s simulation/design calculation — Level 1 hall: 6,840 W over 7,511.93 m², a lighting power density of 0.91 W/m² and about 95.76 kWh a day.",
+        "Report’s simulation/design calculation — Level 2 hall: 0.90 W/m² over 8,168.10 m² with 53 Philips BY121P and 300 RZB luminaires.",
+        "Report’s simulation/design calculation — Rooms from 1.05 to 2.28 W/m²: checkout desks 1.05, history room 1.45, librarian room 1.57, mechanical room 1.59, meeting room 1 2.28."
+      ],
+      "tools": [
+        "DIALux evo"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/library-bookshelves.webp",
+          "alt": "DIALux evo render of a lit bookshelf aisle in the reading hall"
+        },
+        {
+          "src": "assets/img/work/library-hall-daylight.webp",
+          "alt": "Level 1 reading hall with daylight"
+        },
+        {
+          "src": "assets/img/work/library-meeting-room.webp",
+          "alt": "Meeting room 1 lighting render"
+        },
+        {
+          "src": "assets/img/work/library-history-daylight.webp",
+          "alt": "History room with daylight"
+        },
+        {
+          "src": "assets/img/work/library-history-no-daylight.webp",
+          "alt": "History room without daylight, lit by its luminaires only"
+        },
+        {
+          "src": "assets/img/work/library-level1-plan.webp",
+          "alt": "First-floor layout seen from above in DIALux evo"
+        }
+      ],
+      "needsInput": [],
+      "limitations": [
+        "The stated powers, areas and lighting power densities are retained from the report’s DIALux design, not field measurements or independently verified lighting-standard compliance. LPD is installed power / area (W/m²); daily energy is power × operating time (kWh/day).",
+        "Meeting room 1 reports 325.2 W and 3.76248 kWh. The report mixes 8-hour and 14-hour schedules: 325.2 W × 8 h = 2.6016 kWh and × 14 h = 4.5528 kWh. Neither gives its stated energy value. The reported 2.28 W/m² is retained.",
+        "For the computer lab, the source reports 528 W, 227.96 m², 2.32 W/m² and 7.9456 kWh for 14 hours. Arithmetic gives 7.392 kWh; 528 / 227.96 ≈ 2.316 W/m² already rounds to 2.32. Its later “around 7 fixtures” recommendation puts operating hours into an LPD calculation and is dimensionally inconsistent; it is not adopted as a redesign.",
+        "Other unresolved daily-energy discrepancies: the checkout room reports 5.482 kWh but 356 W × 14 h = 4.984 kWh; the librarian room reports 2.5395 kWh but 127.5 W × 14 h = 1.785 kWh. Original reported figures are not silently replaced with these arithmetic cross-checks.",
+        "The Level 1 hall’s 6,840 W, 7,511.93 m², 0.91 W/m² and 95.76 kWh at 14 hours are mutually consistent to the stated rounding. The Level 2 hall’s reported 0.90 W/m² and 8,168.10 m² remain as source results."
+      ],
+      "sources": [
+        "Electrical Power Utilisation lighting assignment report, DIALux design figures and power/energy calculations on PDF pages 21–27."
+      ]
+    },
+    {
+      "slug": "go-kart",
+      "featured": false,
+      "order": 29,
+      "title": "Go-kart design",
+      "category": "software",
+      "context": "University project",
+      "role": "",
+      "summary": "Go-kart assembly and mechanical parts modelled in SolidWorks.",
+      "tools": [
+        "SolidWorks"
+      ],
+      "images": [],
+      "needsInput": [
+        "Module, year, render"
+      ]
+    },
+    {
+      "slug": "wheatstone-bridge",
+      "featured": false,
+      "order": 30,
+      "title": "Wheatstone bridge with a potentiometer",
+      "category": "signals",
+      "context": "Instrumentation and Measurement lab, APU",
+      "year": "2021",
+      "role": "Individual lab",
+      "summary": "Balanced and unbalanced Wheatstone bridge simulated in Multisim: the unknown arm found from the bridge ratio, and the output traced from −1.6667 V to 378.79 mV as one arm changed from 1 kΩ to 10 kΩ.",
+      "problem": "How does a Wheatstone bridge reveal an unknown resistance, and how does its output move away from zero as one arm changes?",
+      "objective": "Build the bridge from three fixed resistors and a potentiometer, show the balanced and unbalanced conditions, and compare the simulated output with the Thevenin equation.",
+      "approach": [
+        "Derived the balance condition R4 = (R2/R1)·R3 and, from Thevenin's theorem, the unbalanced output VBD = V(R3/(R1+R3) − R4/(R2+R4)).",
+        "Multisim balanced case: R1 = R2 = 1 kΩ with R3 set from 2 kΩ to 10 kΩ, and the potentiometer tuned until the simulated output read 0 V.",
+        "Unbalanced case: 5 V supply, R1 = R2 = 1 kΩ and a 5 kΩ fourth arm, with the potentiometer stepped from 1 kΩ to 10 kΩ in 1 kΩ steps."
+      ],
+      "specs": [
+        [
+          "Supply",
+          "5 V"
+        ],
+        [
+          "Fixed arms",
+          "1 kΩ, 1 kΩ and 5 kΩ"
+        ],
+        [
+          "Simulator",
+          "NI Multisim Live"
+        ]
+      ],
+      "results": [
+        "Simulation result — Balanced: the calculated unknown resistance matched the simulated value at all five settings, from 2 kΩ to 10 kΩ, with 0 V across the galvanometer.",
+        "Simulation result — Unbalanced: the output rose from −1.6667 V at 1 kΩ through 0 V at 5 kΩ to 378.79 mV at 10 kΩ, matching the equation at every step."
+      ],
+      "tools": [
+        "Multisim"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/wheatstone-multisim-unbalanced.webp",
+          "alt": "Multisim bridge with the potentiometer at 1 kΩ, reading −1.6667 V"
+        },
+        {
+          "src": "assets/img/work/wheatstone-multisim-balanced.webp",
+          "alt": "Multisim bridge balanced at 5 kΩ, reading 0 V"
+        }
+      ],
+      "needsInput": [],
+      "limitations": [
+        "These are NI Multisim Live simulation readings and analytical calculations, not physical bench measurements. Agreement and the displayed 0 V balance apply to the reported model and numerical precision; hardware tolerance, noise and instrument uncertainty were not established."
+      ],
+      "sources": [
+        "Instrumentation and Measurement report, final 4.pdf, PDF pages 3–11; cross-checked against the overlapping Wheatstone report Lap Report1-19.pdf."
+      ]
+    },
+    {
+      "slug": "op-amp-amplifiers",
+      "featured": false,
+      "order": 31,
+      "title": "Inverting and non-inverting 741 amplifiers",
+      "category": "signals",
+      "context": "Instrumentation and Measurement lab, APU",
+      "year": "2021",
+      "role": "Individual lab",
+      "summary": "741 op-amp amplifiers simulated in Multisim with three resistor pairs each: inverting gains of −1, −1.3333 and −0.8571 and non-inverting gains of 2, 2.3333 and 1.8571, all matching the calculated values.",
+      "problem": "How closely does a 741 op-amp follow the ideal gain equations in its inverting and non-inverting forms?",
+      "objective": "Build both amplifiers, read the gain from the input and output waveforms, and compare it with −Rf/R1 and 1 + Rf/R1.",
+      "approach": [
+        "Derived the closed-loop gains from nodal analysis and the virtual-short principle: −Rf/R1 for the inverting amplifier and 1 + Rf/R1 for the non-inverting one.",
+        "Simulated both circuits around a 741 with a ±12 V supply and a 1 V, 50 Hz sine input in Multisim, plotting simulated input and output together.",
+        "Ran three resistor pairs for each: equal (1 kΩ and 1 kΩ), larger feedback (3 kΩ and 4 kΩ) and smaller feedback (7 kΩ and 6 kΩ)."
+      ],
+      "specs": [
+        [
+          "Op-amp",
+          "741 (UA741CD)"
+        ],
+        [
+          "Supply",
+          "±12 V"
+        ],
+        [
+          "Input",
+          "1 V sine at 50 Hz"
+        ],
+        [
+          "Simulator",
+          "NI Multisim Live"
+        ]
+      ],
+      "results": [
+        "Simulation result — Inverting: gains of −1, −1.3333 and −0.8571, with the output 180° out of phase with the input.",
+        "Simulation result — Non-inverting: gains of 2, 2.3333 and 1.8571, in phase with the input.",
+        "Simulation result — Simulated and calculated gains agreed at every setting, with 0% error in the simulator."
+      ],
+      "tools": [
+        "Multisim"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/opamp-multisim-inverting.webp",
+          "alt": "Multisim inverting amplifier with 3 kΩ input and 4 kΩ feedback resistors, output in antiphase with the input"
+        },
+        {
+          "src": "assets/img/work/opamp-multisim-noninverting.webp",
+          "alt": "Multisim non-inverting amplifier with 3 kΩ and 4 kΩ resistors, output in phase with the input"
+        }
+      ],
+      "needsInput": [],
+      "limitations": [
+        "The report states 0% error between its displayed simulated and calculated gains. This is a rounded simulation comparison, not a measured zero-error claim about a physical 741. Offset, resistor tolerance, noise and hardware frequency response were not verified."
+      ],
+      "sources": [
+        "Instrumentation and Measurement report, final 4.pdf, amplifier experiment and results on PDF pages 13–22, including the tables on page 19."
+      ]
+    },
+    {
+      "slug": "two-port-network",
+      "featured": false,
+      "order": 32,
+      "title": "Two-port network parameters",
+      "category": "signals",
+      "context": "Analysis of Circuits lab, APU",
+      "year": "2021",
+      "role": "Individual lab",
+      "summary": "Z- and Y-parameters of resistive T and π networks found from simulated open- and short-circuit tests in LTspice at 5, 10 and 15 V, showing the network is reciprocal.",
+      "problem": "Can a two-port network's Z- and Y-parameters be found from measurements at its terminals alone, and do they hold as the test voltage changes?",
+      "objective": "Build T and π networks, measure the port voltages and currents under open- and short-circuit tests, and calculate the parameters.",
+      "approach": [
+        "T network for the Z-parameters: drove one port with the other open, recording I1 and V2, then I2 and V1, at 5, 10 and 15 V.",
+        "π network for the Y-parameters: drove one port with the other shorted, recording I1 and I2 at the same three voltages.",
+        "Built both networks from 1 kΩ, 2 kΩ and 3 kΩ resistors and calculated each parameter from the measured voltage and current ratios."
+      ],
+      "specs": [
+        [
+          "Resistors",
+          "1 kΩ, 2 kΩ and 3 kΩ"
+        ],
+        [
+          "Test voltages",
+          "5, 10 and 15 V"
+        ],
+        [
+          "Simulator",
+          "LTspice"
+        ]
+      ],
+      "results": [
+        "Z-parameters: z11 = 3000 Ω, z12 = z21 = 2000 Ω and z22 = 5000 Ω at all three voltages.",
+        "Source report, Table 4: Y-parameters: y11 = 0.0015 S, y12 = y21 = 0.0005 S and y22 = 0.000833 S.",
+        "z12 equals z21 and y12 equals y21, so the network is reciprocal. This reciprocity statement does not resolve the current-reference sign discrepancy."
+      ],
+      "tools": [
+        "LTspice"
+      ],
+      "images": [
+        {
+          "src": "assets/img/work/twoport-ltspice-pi.webp",
+          "alt": "LTspice π network at 5 V with its operating-point currents"
+        }
+      ],
+      "needsInput": [],
+      "limitations": [
+        "The report draws both port currents entering the positive-voltage terminals (PDF page 3, Figure 2; pages 6–7, Figures 9–10). For its π network, I1 = V1/1000 + (V1 − V2)/2000 and I2 = V2/3000 + (V2 − V1)/2000. Under that convention, y12 = y21 = −0.0005 S; y11 = 0.0015 S and y22 ≈ 0.000833 S.",
+        "Table 4 reports positive transfer values, +0.0005 S, which are retained above as the original source results. Their magnitudes match the circuit; their signs do not match the drawn entering-current convention. Reporting magnitudes or an opposite ammeter reference could explain this, but the report does not reconcile it. No simulator rerun or physical measurement is claimed.",
+        "The sample y22 calculation on PDF page 10 prints 0.00833 S, whereas 4.16667 mA / 5 V ≈ 0.000833 S agrees with Table 4. Its y11 prose also says 2 mA while its fraction uses 15 mA. These are unresolved source transcription discrepancies.",
+        "The T-network Z tests and π-network Y tests use separate resistor arrangements. They are not claimed to be equivalent networks or inverse parameter matrices."
+      ],
+      "sources": [
+        "Analysis of Circuits report, PDF pages 3–10 and LTspice appendix pages 11–16."
+      ]
+    }
+  ]
+}
