@@ -963,19 +963,59 @@
       "slug": "medication-scanner",
       "featured": false,
       "order": 12,
-      "title": "Medication scanner and obstacle detection",
+      "title": "Medicine identification and obstacle detection for the hospital AGV",
       "category": "vision",
-      "context": "University project",
-      "role": "",
-      "summary": "Python application on a Jetson for medication image scanning and obstacle detection.",
+      "context": "Group design project, APU: individual part",
+      "role": "Individual part of a four-member team",
+      "summary": "Badr's part of the hospital AGV: two vision models on a Jetson Orin Nano, one to identify the medicines being carried and one to detect obstacles and judge their distance.",
       "tools": [
         "Python",
-        "NVIDIA Jetson"
+        "YOLOv8",
+        "Roboflow",
+        "ONNX",
+        "Tkinter",
+        "ZED SDK",
+        "NVIDIA Jetson Orin Nano"
       ],
       "images": [],
       "needsInput": [
         "Module, year, screenshot"
-      ]
+      ],
+      "year": "2025",
+      "problem": "A hospital delivery robot must confirm it carries the right medicine, and must see people, beds and trolleys in a corridor and know how far away they are.",
+      "objective": "Select the vision hardware, prepare the datasets, train the two models and test them before they run on the robot.",
+      "approach": [
+        "Chose the NVIDIA Jetson Orin Nano over a Raspberry Pi 4 for its GPU, and the ZED 2i stereo camera over a USB webcam because it measures depth.",
+        "Took four public datasets from Roboflow Universe (two of hospital scenes, two of medicines), unified their labels, and built one project for navigation safety and one for medicine recognition.",
+        "Trained a segmentation model for 50 epochs at batch size 4 to fit a 6 GB GPU, and a YOLOv8s medicine detector on 360 images for 100 epochs at batch size 8, both with early stopping.",
+        "Built a medication test interface with a \"Sniper Mode\" that crops the centre 640 × 640 of a 1920 × 1080 frame to mimic a focused check, with a confidence slider.",
+        "Built a navigation interface that reads the ZED 2i depth at each detected object and sets a safety state from its distance.",
+        "Planned the software in layers: the two ONNX models sit above the GPU drivers on the Jetson, with Python classes on top."
+      ],
+      "specs": [
+        [
+          "Compute",
+          "NVIDIA Jetson Orin Nano, Ubuntu 22.04"
+        ],
+        [
+          "Camera",
+          "ZED 2i stereo camera"
+        ],
+        [
+          "Safe",
+          "More than 2.0 m"
+        ],
+        [
+          "Slow down",
+          "1.0 m to 2.0 m"
+        ],
+        [
+          "Emergency stop",
+          "Less than 1.0 m"
+        ]
+      ],
+      "results": [],
+      "sources": "OneDrive > University > Year 4 Sem 1 > 02. GDP > Brainstorming > Report Drafts > New > GDP Report most updated.docx, \"Chapter 2 Badr Albdulmajeed TP061632 Individual Part\"."
     },
     {
       "slug": "hand-gesture",
@@ -1080,7 +1120,7 @@
       "slug": "honeycomb-power-hub",
       "featured": false,
       "order": 15,
-      "title": "Modular smart power hub",
+      "title": "Honeycomb modular power hub",
       "category": "power",
       "context": "Product Creation Technology assignment, APU",
       "year": "2026",
@@ -1115,7 +1155,10 @@
           "Magnetic pogo-pin connectors"
         ]
       ],
-      "sources": "OneDrive > University > Year 4 Sem 2 > PCT > WORD DRAFTS > Badr word > Tp061632 PCT.docx, \"Modular Smart Power Hub: The Honeycomb System\", submitted 12 June 2026."
+      "sources": "OneDrive > University > Year 4 Sem 2 > PCT > WORD DRAFTS > Badr word > Tp061632 PCT.docx, \"Modular Smart Power Hub: The Honeycomb System\", submitted 12 June 2026.",
+      "legacyTitles": [
+        "Modular smart power hub"
+      ]
     },
     {
       "slug": "transformer-alternator",
@@ -1570,21 +1613,74 @@
       ]
     },
     {
-      "slug": "go-kart",
+      "slug": "bumper-car",
       "featured": false,
       "order": 29,
-      "title": "Go-kart design",
+      "title": "Bumper car with laser tag",
       "category": "software",
-      "context": "University project",
-      "role": "",
-      "summary": "Go-kart assembly and mechanical parts modelled in SolidWorks.",
+      "context": "Engineering Design group assignment, APU",
+      "role": "Team project (four members): concept chosen by the group",
+      "summary": "Bumper car concept that doubles as laser tag, driven by two joysticks. The group chose Badr's sketch and modelled the full car in SolidWorks.",
       "tools": [
         "SolidWorks"
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/img/work/bumper-car-isometric.webp",
+          "alt": "SolidWorks isometric view of the red bumper car with seat, joystick and screen"
+        },
+        {
+          "src": "assets/img/work/bumper-car-sketch.webp",
+          "alt": "Hand sketch of the bumper car concept with labelled parts"
+        },
+        {
+          "src": "assets/img/work/bumper-car-exploded.webp",
+          "alt": "Exploded view of the bumper car assembly"
+        },
+        {
+          "src": "assets/img/work/bumper-car-section.webp",
+          "alt": "Section view through the bumper car"
+        }
+      ],
       "needsInput": [
         "Module, year, render"
-      ]
+      ],
+      "legacyTitles": [
+        "Go-kart design"
+      ],
+      "year": "2021",
+      "problem": "A standard bumper car has a front steering wheel that a rider can hit in a rear collision, and the ride offers nothing beyond bumping.",
+      "objective": "Each member proposed a bumper car concept; the group then selected one and produced its engineering drawings and 3D assembly.",
+      "approach": [
+        "Sketched a concept with an infrared beam and a receiver on each car, so riders score points as in laser tag.",
+        "Replaced the steering wheel and pedals with a 360° joystick on each side of the seat, with buttons to fire the beam and change settings.",
+        "Added safety features: a four-point seat belt, an adjustable headrest, an emergency button, a circuit breaker and air vents against overheating.",
+        "The group chose this sketch and combined it with the spring bumper from another member's concept.",
+        "Modelled the parts in SolidWorks, produced the engineering drawings with bills of materials, and built the assembly step by step: seat and belt, joysticks, wheels, bumper, then the full car."
+      ],
+      "specs": [
+        [
+          "Size",
+          "2 m × 1 m × 1 m"
+        ],
+        [
+          "Motor",
+          "Brushless DC, 24 V, 300 W"
+        ],
+        [
+          "Batteries",
+          "Two 12 V, 55 Ah, rechargeable"
+        ],
+        [
+          "Display",
+          "20-inch LCD for time and points"
+        ]
+      ],
+      "results": [
+        "The group selected this concept as its final design.",
+        "Delivered the full SolidWorks assembly with isometric, exploded and section views."
+      ],
+      "sources": "Engineering Design group assignment \"Bumper Car\", Group 9, submitted 19 Feb 2021 (PDF supplied by Badr): concept on pages 3-4, chosen design on page 8, views on pages 83-85."
     },
     {
       "slug": "wheatstone-bridge",
