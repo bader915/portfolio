@@ -588,18 +588,22 @@
       ],
       "specs": [
         [
-          "Defect classes",
+          "Component classes (classification)",
           "22"
         ],
         [
+          "Detection dataset",
+          "696 images, 6,228 annotations, 15 classes"
+        ],
+        [
           "Inference",
-          "ONNX Runtime CUDA"
+          "ONNX Runtime with CUDA on an RTX 3060 laptop GPU"
         ]
       ],
       "results": [
-        "77.50% test accuracy and a weighted F1 score of 0.8281 across 22 classes.",
-        "68.83% mAP@50.",
-        "37.25 frames per second after GPU optimisation."
+        "77.50% test accuracy and a weighted F1 score of 0.8281 across 22 component classes.",
+        "68.83% mAP@50 and 53.12% mAP@50–95 for detection with RF-DETR.",
+        "37.25 frames per second (26.85 ms average latency), above the 30 FPS real-time target."
       ],
       "tools": [
         "PyTorch",
@@ -629,7 +633,8 @@
       "needsInput": [
         "Dataset size and source",
         "The thesis PDF, if it may be shared"
-      ]
+      ],
+      "sources": "OneDrive > University > Year 4 Sem 2 > FYP > 02. Word Docs Drafts > 03. Doc Drafts > IEEE > IEEE TP061632.docx."
     },
     {
       "slug": "hospital-agv-vision",
@@ -911,19 +916,48 @@
       "order": 11,
       "title": "Residential smart parking system",
       "category": "embedded",
-      "context": "Microprocessor and Embedded Systems, APU",
-      "year": "2025",
-      "role": "Team project",
-      "summary": "Arduino entry and exit control, parking-space detection and a status display, tested module by module.",
+      "context": "Microprocessor Systems and Embedded Software group assignment, APU",
+      "year": "2024",
+      "role": "Team project: tray system",
+      "summary": "Group design for an automated, tray-based car park. Badr built the tray: an Arduino robot that carries the car and avoids obstacles with a servo-scanned ultrasonic sensor.",
       "tools": [
-        "Arduino",
-        "Sensors"
+        "Arduino Uno",
+        "Arduino IDE (C/C++)",
+        "Tinkercad"
       ],
       "images": [],
       "needsInput": [
         "Your own part of the team work",
         "A photograph or Tinkercad screenshot"
-      ]
+      ],
+      "problem": "Drivers lose time and fuel searching for a space, and manual car parks give no guidance.",
+      "objective": "Design a fully automatic parking system that moves a car to a space with no driver involved. The group split it into a tray system, a lift system, and spot detection with assisted parking.",
+      "approach": [
+        "Simulated the tray in Tinkercad first: an Arduino Uno, an ultrasonic sensor mounted on a servo, an L293D motor driver and two DC motors.",
+        "Built the prototype tray with an Arduino Uno, ultrasonic sensor, servo motor and an IR sensor that reads the surface under the tray.",
+        "Wrote the control program in the Arduino IDE (C/C++): the servo sweeps the ultrasonic sensor from 0° to 180° to scan ahead, left and right.",
+        "When an obstacle is closer than 5 cm, the tray stops and turns towards the side with more space.",
+        "Used the serial monitor to watch the sensor readings and tune the behaviour."
+      ],
+      "specs": [
+        [
+          "Controller",
+          "Arduino Uno"
+        ],
+        [
+          "Sensors",
+          "Ultrasonic sensor on a servo; IR surface sensor"
+        ],
+        [
+          "Drive",
+          "L293D motor driver, two DC motors"
+        ],
+        [
+          "Obstacle threshold",
+          "5 cm"
+        ]
+      ],
+      "sources": "OneDrive > University > Year 3 Sem 2 > MSES > Assingment > Documentation > Assiginment.docx, section \"Individual Component - Tray system - Badr Albdulmajeed\", dated 20 Dec 2024."
     },
     {
       "slug": "medication-scanner",
@@ -1048,18 +1082,40 @@
       "order": 15,
       "title": "Modular smart power hub",
       "category": "power",
-      "context": "Product Creation Technology, APU",
+      "context": "Product Creation Technology assignment, APU",
       "year": "2026",
       "role": "Individual assignment",
-      "summary": "A modular, honeycomb-shaped power hub designed in SolidWorks, so one broken socket does not scrap the whole strip.",
-      "problem": "A power strip has a fixed number of outlets; when one socket or its wiring fails, the whole unit is thrown away.",
+      "summary": "Product design for a repairable power strip: a master hub with hexagonal socket modules that snap on magnetically, so one failed socket is replaced on its own. Modelled in SolidWorks.",
+      "problem": "A standard power strip is thrown away whole when one socket or its wiring fails, which adds to e-waste, and overloaded strips are a fire risk.",
       "tools": [
         "SolidWorks"
       ],
       "images": [],
       "needsInput": [
         "SolidWorks render of the hub"
-      ]
+      ],
+      "objective": "Design a power hub that allows socket-by-socket replacement, includes fast charging, and can be arranged around a desk.",
+      "approach": [
+        "Generated three concepts by brainstorming and a morphological chart: the Honeycomb Hub (modular cluster), the Articulated Snake (flexible strip) and the Vertical Stacking Tower.",
+        "Scored the concepts against the design objectives and selected the Honeycomb Hub, noting that it is the harder one to manufacture.",
+        "Designed a master hub that plugs into the wall and passes AC power to each hexagonal module through magnetic pogo-pin connectors.",
+        "Modelled every module as a separate part in SolidWorks, mated them into the assembly, and produced the engineering drawing."
+      ],
+      "specs": [
+        [
+          "Charging module",
+          "100 W GaN USB-C"
+        ],
+        [
+          "Portable module",
+          "Detachable 20,000 mAh power bank"
+        ],
+        [
+          "Module connection",
+          "Magnetic pogo-pin connectors"
+        ]
+      ],
+      "sources": "OneDrive > University > Year 4 Sem 2 > PCT > WORD DRAFTS > Badr word > Tp061632 PCT.docx, \"Modular Smart Power Hub: The Honeycomb System\", submitted 12 June 2026."
     },
     {
       "slug": "transformer-alternator",
@@ -1067,17 +1123,29 @@
       "order": 16,
       "title": "Transformer and alternator testing",
       "category": "power",
-      "context": "Electrical Machines 2 lab, APU",
+      "context": "Electrical Machines 2 guided lab, APU",
       "year": "2023",
       "role": "Individual lab",
-      "summary": "Ratio, open-circuit, short-circuit and load tests on a single-phase transformer and a three-phase alternator.",
+      "summary": "Ratio, open-circuit, short-circuit and load tests on a single-phase transformer, and characteristic tests on a three-phase alternator.",
       "tools": [
         "Electrical machines laboratory"
       ],
       "images": [],
       "needsInput": [
         "Photograph of the bench set-up"
-      ]
+      ],
+      "objective": "Measure the transformation ratio, find the iron losses and excitation parameters, find the winding resistance and reactance, and determine voltage regulation and efficiency.",
+      "approach": [
+        "Transformation ratio test: measured primary and secondary voltage at five settings from 51.5 V to 181.6 V.",
+        "Open-circuit test with the high-voltage winding open, recording voltage, no-load current and power for the core losses.",
+        "Short-circuit test with the low-voltage winding shorted, raising the voltage slowly up to full-load current.",
+        "Load test to calculate efficiency and voltage regulation.",
+        "Second lab: resistance test on a three-phase alternator to find its armature resistance, and its characteristics."
+      ],
+      "results": [
+        "The measured transformation ratio stayed at about 1.22 across all five voltage settings."
+      ],
+      "sources": "OneDrive > University > 02. EM2 > tp061632 EM2 assignment.docx, submitted 10 Aug 2023."
     },
     {
       "slug": "microgrid-technology",
@@ -1085,11 +1153,12 @@
       "order": 17,
       "title": "Microgrid with solar PV and battery storage",
       "category": "power",
-      "context": "Generation, Transmission and Distribution, APU",
+      "context": "Generation, Transmission and Distribution assignment, APU",
       "year": "2024",
       "role": "Individual assignment",
       "summary": "Simulink microgrid with PV, battery state-of-charge control and household and commercial loads, plus power-factor correction.",
       "tools": [
+        "MATLAB",
         "Simulink"
       ],
       "images": [
@@ -1098,7 +1167,32 @@
           "alt": "Simulink model of the microgrid with PV, battery and loads"
         }
       ],
-      "needsInput": []
+      "needsInput": [],
+      "objective": "Build and simulate a microgrid with solar panels, battery storage and varying loads, and work out the power-factor correction it needs.",
+      "approach": [
+        "Modelled the grid connection, the PV panels, the battery subsystem and the loads in Simulink.",
+        "Monitored real and reactive power, voltage, frequency and the battery state of charge during the run.",
+        "Took the real and reactive power from the simulation and calculated the capacitor compensation needed to reach a power factor of 0.98."
+      ],
+      "results": [
+        "Simulated load: 4,212.5 W and 4,003.8 VAR, a power factor of 0.724.",
+        "Reaching a power factor of 0.98 needs about 3,144 VAR of capacitive compensation."
+      ],
+      "specs": [
+        [
+          "System voltage",
+          "311 V"
+        ],
+        [
+          "Frequency",
+          "50 Hz"
+        ],
+        [
+          "Target power factor",
+          "0.98"
+        ]
+      ],
+      "sources": "OneDrive > University > Year 3 Sem 1 > 02. GTD > 01. FINAL ASSINGMENT > GTD - Microgrid Tecnology - Tp061632.docx, section 3.3 for the power-factor figures."
     },
     {
       "slug": "wind-energy-system",
@@ -1106,33 +1200,83 @@
       "order": 18,
       "title": "Off-grid wind and battery power conversion",
       "category": "power",
-      "context": "Power Electronics, APU",
+      "context": "Power Electronics assignment, APU",
       "year": "2025",
       "role": "Individual assignment",
-      "summary": "Rectifier, DC-DC converter, battery and three-phase inverter sized and simulated for an off-grid wind turbine.",
+      "summary": "Rectifier, buck-boost converter, 48 V battery and PWM inverter sized and simulated in Simulink for a 500 W off-grid wind turbine.",
       "tools": [
-        "Simulink"
+        "MATLAB",
+        "Simulink R2024b"
       ],
       "images": [],
       "needsInput": [
         "Simulink screenshot"
-      ]
+      ],
+      "problem": "Wind does not blow steadily, so an off-grid home needs power electronics and storage between the turbine and its appliances.",
+      "objective": "Design and simulate a complete off-grid wind energy system from the turbine to the AC output.",
+      "approach": [
+        "Sized the system for Malaysian conditions, assuming an average wind speed of 3 m/s.",
+        "Chose a full-bridge rectifier to turn the turbine output into DC, and a buck-boost DC-DC converter to regulate it.",
+        "Sized a 48 V, 100 Ah battery with 80% usable depth of discharge from the household daily energy use.",
+        "Added a PWM inverter for a 230 V AC sine output and built the whole chain with its controls in Simulink."
+      ],
+      "results": [
+        "The simulation showed a stable DC bus voltage, a working battery storage stage and a usable AC output.",
+        "The report lists power quality, efficiency and real-world testing as work still to do."
+      ],
+      "specs": [
+        [
+          "Turbine",
+          "Horizontal-axis, 500 W, cut-in 2 m/s, rated 10 m/s"
+        ],
+        [
+          "Battery",
+          "48 V, 100 Ah"
+        ],
+        [
+          "Inverter",
+          "PWM, 230 V AC sine output"
+        ],
+        [
+          "Household load",
+          "800 W"
+        ]
+      ],
+      "sources": "OneDrive > University > Year 3 Sem 2 > PED > A > Assingment > Ped Tp061632 .docx, submitted 12 Jan 2025."
     },
     {
       "slug": "sound-purifier",
       "featured": false,
       "order": 19,
-      "title": "Speech enhancement filter",
+      "title": "Speech enhancement filter app",
       "category": "signals",
-      "context": "Digital Signal Processing, APU",
+      "context": "Digital Signal Processing assignment, APU",
       "year": "2025",
       "role": "Individual assignment",
-      "summary": "MATLAB signal-processing model that removes unwanted components from recorded speech.",
+      "summary": "MATLAB app that loads a recording, applies a chosen filter, and lets the user see, hear, compare and save the cleaned speech.",
       "tools": [
         "MATLAB"
       ],
       "images": [],
-      "needsInput": []
+      "needsInput": [],
+      "problem": "Background noise in streets, restaurants or factories makes recorded speech hard to understand.",
+      "objective": "Create a speech enhancement system in MATLAB that uses filters to remove noise and improve speech quality.",
+      "approach": [
+        "Built a graphical app: the user uploads an audio file, picks a filter, and views the signal and its frequency content before and after.",
+        "Included seven filters: low-pass, high-pass, band-pass, band-stop, Butterworth, Chebyshev and Wiener.",
+        "Added playback of the original and filtered audio, saving of the result, and side-by-side comparison of two filters.",
+        "Added messages for a missing file or no filter selected."
+      ],
+      "results": [
+        "The app filtered the test recordings and let the filters be compared by graph and by ear."
+      ],
+      "specs": [
+        [
+          "Filters",
+          "Low-pass, high-pass, band-pass, band-stop, Butterworth, Chebyshev, Wiener"
+        ]
+      ],
+      "sources": "OneDrive > University > Year 3 Sem 2 > DSP > ASSIN > Sound test > Tp061632 DSP Speech enchancment.docx, submitted 2 Jan 2025."
     },
     {
       "slug": "bjt-amplifier",
@@ -1157,15 +1301,23 @@
       "order": 21,
       "title": "Discrete-time system with the Z-transform",
       "category": "signals",
-      "context": "Signals and systems lab, APU",
+      "context": "Signals and Linear Systems open-ended lab, APU",
       "year": "2023",
       "role": "Individual lab",
-      "summary": "Step, impulse and frequency response of a discrete-time system computed in MATLAB.",
+      "summary": "MATLAB study of a discrete-time system defined by a difference equation: its output, frequency spectra, and impulse, step and frequency responses.",
       "tools": [
         "MATLAB"
       ],
       "images": [],
-      "needsInput": []
+      "needsInput": [],
+      "objective": "Complete a MATLAB script that investigates a discrete-time system defined by a difference equation.",
+      "approach": [
+        "Applied an input signal with 10 Hz, 20 Hz and 30 Hz components and computed the system output.",
+        "Plotted the frequency spectrum of the input and of the output to compare their frequency content.",
+        "Computed the impulse response, the step response and the frequency response of the system.",
+        "Varied the equation coefficients (A1, A2, A3) to see how they change the response."
+      ],
+      "sources": "OneDrive > University > 05. SLS > SLS assin.docx, \"Discrete time system using Z-transform\", submitted 10 Aug 2023."
     },
     {
       "slug": "fm-modulation",
@@ -1173,16 +1325,39 @@
       "order": 22,
       "title": "FM modulation and demodulation",
       "category": "signals",
-      "context": "Communication engineering module, APU",
-      "role": "",
-      "summary": "LabVIEW model for FM signal generation, modulation and demodulation.",
+      "context": "Communication Engineering Principles assignment, APU",
+      "role": "Individual assignment",
+      "summary": "Simulink model that frequency-modulates a sine wave, passes it through a noisy channel and demodulates it, compared at signal-to-noise ratios of 30 dB and 10 dB.",
       "tools": [
-        "LabVIEW"
+        "MATLAB",
+        "Simulink"
       ],
       "images": [],
       "needsInput": [
         "Year, screenshot"
-      ]
+      ],
+      "year": "2024",
+      "problem": "How well does frequency modulation carry a signal once the channel adds noise?",
+      "objective": "Perform FM modulation and demodulation of a sinusoidal signal in Simulink, and analyse the result when an AWGN channel is added at different signal-to-noise ratios.",
+      "approach": [
+        "Built the chain in Simulink: sine-wave information signal, FM Modulator Passband block, AWGN Channel block, FM Demodulator Passband block, with scopes and spectrum analysers at each stage.",
+        "Set the modulator and demodulator to the same carrier frequency and frequency deviation so the signal could be recovered.",
+        "Ran the model with the channel set to 30 dB and then 10 dB, and compared the spectrum, the modulated signal and the demodulated output."
+      ],
+      "results": [
+        "At 10 dB the demodulated output showed clearly more distortion than at 30 dB."
+      ],
+      "specs": [
+        [
+          "Channel",
+          "AWGN"
+        ],
+        [
+          "SNR settings",
+          "30 dB and 10 dB"
+        ]
+      ],
+      "sources": "OneDrive > University > Year 3 Sem 1 > 01. CEP > Assingment > TP061632 CEP (FM).docx, submitted 19 Aug 2024."
     },
     {
       "slug": "temperature-control",
@@ -1583,6 +1758,285 @@
       "sources": [
         "Analysis of Circuits report, PDF pages 3–10 and LTspice appendix pages 11–16."
       ]
+    },
+    {
+      "featured": false,
+      "order": 33,
+      "problem": "High-voltage equipment must survive short overvoltages from lightning and switching, and DC test voltages must be generated with low ripple.",
+      "objective": "Study how the circuit parameters shape an impulse waveform, and how load current, frequency and capacitance affect ripple and voltage drop in multiplier circuits.",
+      "approach": [
+        "Impulse generator: varied the front resistor, tail resistor and the two capacitances one at a time and recorded peak voltage, front time and tail time.",
+        "Voltage doubler: recorded ripple voltage while varying load current, supply frequency and capacitance.",
+        "Three-stage Cockcroft-Walton multiplier: recorded ripple and voltage drop for the same three variables."
+      ],
+      "specs": [
+        [
+          "Impulse generator defaults",
+          "15 kV charging voltage, 0.6 µF, 0.001 µF, Rf 15 Ω, Rt 115 Ω, 5 cm sphere gap"
+        ],
+        [
+          "Multiplier stages",
+          "3"
+        ]
+      ],
+      "results": [
+        "Default impulse: 27.76 kV peak, 0.5 µs front time and 50.5 µs tail time.",
+        "Raising the tail resistor lengthened the tail time from 33.0 µs to 101.0 µs; raising the front resistor from 15 Ω to 75 Ω lengthened it from 50.5 µs to 74.0 µs.",
+        "Voltage doubler: ripple rose from 500 mV to 2,540 mV as load current rose from 5 µA to 25.4 µA, and fell from 1,000 mV to 200 mV as frequency rose from 50 Hz to 250 Hz.",
+        "Cockcroft-Walton multiplier: raising the stage capacitance from 0.1 µF to 2.0 µF cut the ripple from 3.0 V to 0.15 V."
+      ],
+      "tools": [
+        "Virtual High Voltage Laboratory simulator"
+      ],
+      "images": [],
+      "needsInput": [],
+      "slug": "high-voltage-labs",
+      "title": "Impulse generator and voltage multiplier studies",
+      "category": "power",
+      "context": "High Voltage Engineering guided lab, APU",
+      "year": "2026",
+      "role": "Individual lab",
+      "summary": "Three high-voltage studies on a virtual laboratory: an impulse voltage generator, a voltage doubler and a three-stage Cockcroft-Walton multiplier.",
+      "sources": "OneDrive > University > Year 4 Sem 2 > HVE > HVE TP061632.docx, dated 12 June 2026."
+    },
+    {
+      "featured": false,
+      "order": 34,
+      "problem": "",
+      "objective": "Measure the voltages at no load, and the current and voltage of the line under matched, ohmic-inductive, pure inductive, ohmic-capacitive and pure capacitive loads.",
+      "approach": [
+        "Built the circuit from a three-phase supply, circuit breaker, three-phase transformer and the transmission line model.",
+        "Recorded the line voltages with no load connected.",
+        "Connected a matched resistive load, then mixed and pure inductive loads, then mixed and pure capacitive loads, recording current and voltage each time."
+      ],
+      "specs": [],
+      "results": [
+        "At no load the receiving-end voltage was higher than the sending-end voltage, because of the line capacitance.",
+        "Pure inductive loads gave high reactive power and low efficiency.",
+        "Adding capacitance improved the power factor."
+      ],
+      "tools": [
+        "Transmission line model",
+        "Three-phase transformer",
+        "Resistive, inductive and capacitive loads"
+      ],
+      "images": [],
+      "needsInput": [],
+      "slug": "transmission-line-loads",
+      "title": "Transmission line under different loads",
+      "category": "power",
+      "context": "Generation, Transmission and Distribution lab, APU",
+      "year": "2024",
+      "role": "Individual lab",
+      "summary": "Measurements on a transmission line model at no load, matched load, and inductive and capacitive loads.",
+      "sources": "OneDrive > University > Year 3 Sem 1 > 02. GTD > Lab report > GTD-Report 5.docx, \"Matched load performances\", dated 19 July 2024."
+    },
+    {
+      "featured": false,
+      "order": 35,
+      "problem": "",
+      "objective": "Demonstrate each converter with basic circuitry and compare the measured results with the calculated values.",
+      "approach": [
+        "Controlled rectifier: recorded the output at firing angles of 0°, 30°, 60°, 90°, 120° and 150°.",
+        "Step-down DC chopper: measured the converter output and compared it with theory.",
+        "Full-bridge inverter: measured the single-phase AC output and compared it with theory."
+      ],
+      "specs": [],
+      "results": [
+        "Measured values differed from the calculated ones; the report attributes this to component losses, waveform distortion and the measuring instruments."
+      ],
+      "tools": [
+        "Power electronics laboratory"
+      ],
+      "images": [],
+      "needsInput": [],
+      "slug": "power-electronics-labs",
+      "title": "Controlled rectifier, DC chopper and inverter labs",
+      "category": "power",
+      "context": "Power Electronics lab, APU",
+      "year": "2025",
+      "role": "Individual lab",
+      "summary": "Three power electronics experiments: a single-phase full-wave controlled rectifier, a step-down DC chopper and a single-phase full-bridge inverter.",
+      "sources": "OneDrive > University > Year 3 Sem 2 > PED > Lab report > Ped Labreport.docx, submitted 24 Jan 2025."
+    },
+    {
+      "featured": false,
+      "order": 36,
+      "problem": "",
+      "objective": "Find the open-circuit characteristic from a no-load test, and the load characteristic and voltage regulation from a load test.",
+      "approach": [
+        "No-load test: raised the field current in steps and recorded the generated voltage.",
+        "Load test: added lamp loads in steps and recorded terminal voltage against load current.",
+        "Calculated the voltage regulation from the load-test readings."
+      ],
+      "specs": [],
+      "results": [
+        "No-load voltage rose from 115 V at 160 mA of field current to 142 V at 300 mA.",
+        "Terminal voltage fell from 220 V at 1.2 A to 176 V at 12.7 A of load current.",
+        "Voltage regulation calculated as 22.91%."
+      ],
+      "tools": [
+        "Virtual electrical machines laboratory"
+      ],
+      "images": [],
+      "needsInput": [],
+      "slug": "dc-generator",
+      "title": "DC generator characteristics",
+      "category": "power",
+      "context": "Electrical Machines 1 lab, APU",
+      "year": "2023",
+      "role": "Individual lab",
+      "summary": "No-load and load tests on a shunt-excited DC generator in a virtual laboratory, giving its open-circuit characteristic and voltage regulation.",
+      "sources": "OneDrive > University > 01. EM1 > TP061632 EM1 Lab Report.docx, submitted 9 Nov 2023."
+    },
+    {
+      "featured": false,
+      "order": 37,
+      "problem": "Unbalanced loads make a washing machine drum vibrate, which wears the machine and makes it unreliable.",
+      "objective": "Model the machine, simulate its response, and choose a controller and sensor that reduce the vibration.",
+      "approach": [
+        "Derived a transfer function for the Samsung WF0804 under normal load from real system values.",
+        "Simulated the open-loop response in MATLAB/Simulink; it was under-damped, with overshoot and a long settling time.",
+        "Added a PID controller and a voice coil actuator in a closed loop and tuned the gains.",
+        "Compared the response with and without the controller, and used a root locus plot to study the pole locations."
+      ],
+      "specs": [],
+      "results": [
+        "The PID controller reduced the overshoot and improved the settling time.",
+        "The report notes that the response still needs further tuning and suggests adaptive control as the next step."
+      ],
+      "tools": [
+        "MATLAB",
+        "Simulink"
+      ],
+      "images": [],
+      "needsInput": [],
+      "slug": "washing-machine-vibration",
+      "title": "Vibration control for a washing machine",
+      "category": "automation",
+      "context": "Control Engineering group assignment, APU",
+      "year": "2024",
+      "role": "Team project (four members)",
+      "summary": "Transfer-function model of the vibration of a washing machine under unbalanced load, with a PID controller and voice coil actuator simulated in Simulink.",
+      "sources": "OneDrive > University > Year 3 Sem 1 > 05. CE > CE.docx, group assignment dated 23 Aug 2024."
+    },
+    {
+      "featured": false,
+      "order": 38,
+      "problem": "",
+      "objective": "Build suitable IIR and FIR filters and analyse discrete-time signals in the frequency domain.",
+      "approach": [
+        "Generated a test signal with three frequency components.",
+        "Designed Butterworth IIR filters with buttord and butter: a high-pass filter (pass above 150 Hz, stop below 100 Hz) and a band-stop filter for 150–200 Hz.",
+        "Designed the matching FIR filters with fir1 and a Hamming window, at order 34.",
+        "Plotted the filtered signals and the magnitude and phase responses of each pair."
+      ],
+      "specs": [
+        [
+          "IIR design",
+          "Butterworth"
+        ],
+        [
+          "FIR design",
+          "Hamming window, order 34"
+        ],
+        [
+          "Band-stop range",
+          "150–200 Hz"
+        ]
+      ],
+      "results": [
+        "The IIR filters gave a sharper cutoff with fewer calculations, but distorted the phase.",
+        "The FIR filters kept a smooth phase, but needed more coefficients."
+      ],
+      "tools": [
+        "MATLAB"
+      ],
+      "images": [],
+      "needsInput": [],
+      "slug": "iir-fir-filters",
+      "title": "IIR and FIR filter comparison",
+      "category": "signals",
+      "context": "Digital Signal Processing lab, APU",
+      "year": "2025",
+      "role": "Individual lab",
+      "summary": "Butterworth IIR and Hamming-window FIR filters designed in MATLAB as high-pass and band-stop filters, and compared in magnitude and phase.",
+      "sources": "OneDrive > University > Year 3 Sem 2 > DSP > Lab Report > Tp061632 Lapreport.docx, submitted 9 Feb 2025."
+    },
+    {
+      "featured": false,
+      "order": 39,
+      "problem": "",
+      "objective": "Design a digital circuit that performs at least three operations to solve an algebraic equation, using the fewest universal gates and showing the result on seven-segment displays.",
+      "approach": [
+        "Chose the expression (A + B) + √(B²) and wrote its truth table.",
+        "Drew a Karnaugh map for each display segment and simplified the logic.",
+        "Built the circuit in simulation from 74LS00 NAND gates and 74LS02 NOR gates, with a 74LS49 decoder driving the display."
+      ],
+      "specs": [
+        [
+          "Gates",
+          "74LS00 NAND, 74LS02 NOR"
+        ],
+        [
+          "Decoder",
+          "74LS49"
+        ],
+        [
+          "Inputs",
+          "Four switches"
+        ]
+      ],
+      "results": [],
+      "tools": [
+        "Circuit simulation"
+      ],
+      "images": [],
+      "needsInput": [],
+      "slug": "alu-2bit",
+      "title": "2-bit arithmetic logic circuit from universal gates",
+      "category": "signals",
+      "context": "Digital Electronics assignment, APU",
+      "year": "2023",
+      "role": "Individual assignment",
+      "summary": "Logic design that evaluates an algebraic expression of binary inputs using only NAND and NOR gates, with a seven-segment display for the answer.",
+      "limitations": "The report records that the simulated circuit displayed only the digits 7 and 8; no working result is claimed on the site.",
+      "sources": "OneDrive > University > 00. DE > tp061632 De assignment.docx, submitted 10 Aug 2023."
+    },
+    {
+      "featured": false,
+      "order": 40,
+      "problem": "",
+      "objective": "Build a graphical app where the user selects a signal type, enters amplitude and frequency, and views the output waveform.",
+      "approach": [
+        "Laid out the interface in App Designer: a drop-down for the waveform, numeric fields for amplitude and frequency, a start button and a plot area.",
+        "Wrote the button callback to read the inputs, generate the chosen waveform and plot it, with a different colour for each type.",
+        "Added saving of the plotted waveform as a PNG file as the extra feature."
+      ],
+      "specs": [
+        [
+          "Waveforms",
+          "Sine, square, triangular, sawtooth"
+        ],
+        [
+          "Inputs",
+          "Amplitude and frequency"
+        ]
+      ],
+      "results": [],
+      "tools": [
+        "MATLAB App Designer"
+      ],
+      "images": [],
+      "needsInput": [],
+      "slug": "waveform-generator-app",
+      "title": "Waveform generator app in MATLAB",
+      "category": "software",
+      "context": "Engineering Software and Applications assignment, APU",
+      "year": "2023",
+      "role": "Individual assignment",
+      "summary": "MATLAB App Designer app that plots a sine, square, triangular or sawtooth wave from the amplitude and frequency the user enters, and saves the plot as an image.",
+      "sources": "OneDrive > University > 04. ESA > ESA assin.docx, submitted 10 Aug 2023."
     }
   ]
 }

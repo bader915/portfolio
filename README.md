@@ -17,7 +17,7 @@ Node script generates the project pages from one data file.
   - a sensor-to-PLC signal path
 
   Below the chapters sit the full project index and the About section.
-- **32 project pages:** generated from `data/data.json`. Each page has a drawing of its field, the record
+- **40 project pages:** generated from `data/data.json`. Each page has a drawing of its field, the record
   of the project, and a pager with Badr's avatar.
 - **Page transitions:** a different one for each field. Vision pages scan, protection pages trip and
   re-energise, automation pages ride a conveyor, embedded pages route traces, signals pages sweep like a
