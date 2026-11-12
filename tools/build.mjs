@@ -12,6 +12,18 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const data = JSON.parse(fs.readFileSync(path.join(root, 'data/data.json'), 'utf8'));
 const dims = JSON.parse(fs.readFileSync(path.join(root, 'data/images.json'), 'utf8'));
 const P = data.person;
+// The public address, used only for link-preview tags (they must be absolute URLs).
+const SITE = (process.env.SITE_URL || 'https://bader915.github.io/portfolio/').replace(/\/?$/, '/');
+// Link-preview image: a project's own card when it has pictures, otherwise the site card (assets/og/*.jpg).
+const ogTags = (pagePath, slug) => {
+  const img = slug && fs.existsSync(path.join(root, 'assets/og', slug + '.jpg')) ? slug : 'default';
+  return `<meta property="og:url" content="${SITE}${pagePath}">
+<meta property="og:site_name" content="Badr Albdulmajeed">
+<meta property="og:image" content="${SITE}assets/og/${img}.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">`;
+};
 
 // Contact details stay out of the repository: locally they come from .env, in GitHub Actions from
 // repository secrets set as environment variables (see README). The phone gives the tel: and wa.me links.
@@ -172,6 +184,7 @@ function casePage(p, i) {
 <meta property="og:title" content="${esc(p.title)} — Badr Albdulmajeed">
 <meta property="og:description" content="${esc(p.summary)}">
 <meta property="og:type" content="article">
+${ogTags(`work/${p.slug}.html`, p.slug)}
 <link rel="preload" href="${pre}assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="${pre}assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="${pre}assets/css/site.css">
@@ -337,6 +350,10 @@ function contactPage() {
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Contact — Badr Albdulmajeed</title>
 <meta name="description" content="Reach Badr Albdulmajeed, electrical and electronic engineer in ${esc(P.location)}, by email, WhatsApp, phone or LinkedIn.">
+<meta property="og:title" content="Contact — Badr Albdulmajeed">
+<meta property="og:description" content="Reach Badr Albdulmajeed by email, WhatsApp, phone or LinkedIn.">
+<meta property="og:type" content="website">
+${ogTags('contact.html')}
 <meta name="theme-color" content="#06090d">
 <link rel="preload" href="assets/fonts/schibsted-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
